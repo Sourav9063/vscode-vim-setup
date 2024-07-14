@@ -1,0 +1,306 @@
+{
+  "editor.tokenColorCustomizations": {
+    "[Abyss]": {
+      "textMateRules": [
+        {
+          "name": "Function argument",
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#6688CC"
+          }
+        },
+        {
+          "name": "Class name",
+          "scope": [
+            "entity.name.class",
+            "entity.name.type",
+            "entity.name.namespace",
+            "entity.name.scope-resolution"
+          ],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#9966b8"
+          }
+        },
+      ]
+    }
+  },
+  "git.ignoreMissingGitWarning": true,
+  "editor.wordWrapColumn": 40,
+  "editor.fontSize": 16,
+  "editor.accessibilitySupport": "off",
+  "dart.openDevTools": "flutter",
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "files.autoSaveDelay": 100,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "editor.renderControlCharacters": false,
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground1": "#1212ff",
+    "editorIndentGuide.activeBackground2": "#ff12a0",
+    "editorIndentGuide.activeBackground3": "#ff1212",
+    "editorIndentGuide.activeBackground4": "#ff7112",
+    "editorIndentGuide.activeBackground5": "#d4ff12",
+    "editorIndentGuide.activeBackground6": "#65ff12",
+    "editorBracketHighlight.foreground1": "#750de6",
+    "editorBracketHighlight.foreground2": "#376cff",
+    "editorBracketHighlight.foreground3": "#30aba7",
+    "editorBracketHighlight.foreground4": "#0e9a0e",
+    "editorBracketHighlight.foreground5": "#f1f51c",
+    "editorBracketHighlight.foreground6": "#fa9231",
+    "[Abyss]": {
+      "editor.selectionBackground": "#0d335a",
+      // "editor.background": "#030C1B",
+      "statusBar.background": "#170038",
+      "statusBar.foreground": "#b6b5b5",
+      "statusBar.border": "#232C34",
+      "activityBar.activeBackground": "#280858",
+      "tab.activeBackground": "#280858",
+      "tab.activeBorder": "#9900ff",
+      // "sideBar.background": "#08002a",
+      "sideBar.border": "#232C34",
+      "tab.hoverBorder": "#420099",
+      "editorLineNumber.foreground": "#3e505a",
+      // "sideBar.background": "#22292f",
+      "sideBarSectionHeader.background": "#051729",
+      "scrollbarSlider.background": "#160a2e",
+      // "titleBar.activeBackground": "#3f0864",
+    }
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "git.suggestSmartCommit": false,
+  "editor.formatOnType": true,
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.devToolsBrowser": "default",
+  "python.languageServer": "Pylance",
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.xlsx": "gc-excelviewer-excel-editor"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.configuration.runtimes": [],
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "C_Cpp.intelliSenseUpdateDelay": 500,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.suggest.preview": true,
+  "cSpell.userWords": [
+    "blogid",
+    "bresenham",
+    "btns",
+    "checkmark",
+    "chome",
+    "embedtv",
+    "esversion",
+    "firestore",
+    "imdb",
+    "isna",
+    "itertuples",
+    "ɪpas",
+    "likedposts",
+    "livetv",
+    "mpga",
+    "NEXTAUTH",
+    "nextjs",
+    "scrollbars",
+    "signin",
+    "Sourav",
+    "stylex",
+    "stylexjs",
+    "sust",
+    "Sylhet",
+    "tailwindcss",
+    "tmpdown",
+    "tmpup",
+    "Toastify",
+    "URLCHANGE",
+    "userid",
+    "webfonts",
+    "webm",
+    "xtmp",
+    "ytmp"
+  ],
+  "tabnine.experimentalAutoImports": true,
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "terminal.integrated.gpuAcceleration": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.guides.bracketPairsHorizontal": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
+    "javascript": true,
+    "css": true
+  },
+  // "dart.flutterSdkPaths": [
+  //   "C:/Users/USER/fvm/versions"
+  // ]
+  "auto-rename-tag.activationOnLanguage": [
+    "*"
+  ],
+  "files.autoSave": "onFocusChange",
+  "git.confirmSync": false,
+  // "github.copilot.advanced": {
+  //   "listCount": 30,
+  //   "length": 500,
+  //   "inlineSuggestCount": 10,
+  //   "debug.showScores": true
+  // },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "window.commandCenter": true,
+  "explorer.confirmDragAndDrop": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.enabled": true,
+  "javascript.suggestionActions.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeJSDocs": true,
+  "javascript.suggest.names": true,
+  "javascript.suggest.paths": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "leetcode.workspaceFolder": "e:\\cpp all codes\\leetCode",
+  "leetcode.defaultLanguage": "cpp",
+  "leetcode.editor.shortcuts": [
+    "submit",
+    "test",
+    "solution"
+  ],
+  "leetcode.problems.sortStrategy": "Acceptance Rate (Descending)",
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "console-ninja.featureSet": "Community",
+  "easycode.userEmail": "sourav.ahmed5654@gmail.com",
+  "terminal.integrated.env.windows": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "easycode.promptPrefix.writeCode": "complete the code",
+  "easycode.temperature": 1,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": -1,
+  "yaml.schemas": {
+    "file:///c%3A/Users/USER/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.jira.jqlList": [
+    {
+      "id": "70407440-8983-4b9b-93b6-cbf8fa08e063",
+      "enabled": true,
+      "name": "My shellbee Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
+      "monitor": true
+    }
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 20,
+  "window.density.editorTabHeight": "compact",
+  "codium.editorButton": false,
+  "workbench.editor.enablePreview": false,
+  "cloudcode.duetAI.project": "ubooksharing-ece40",
+  "python.analysis.extraPaths": [
+    "c:\\Users\\acer\\.vscode\\extensions\\continue.continue-0.6.15-win32-x64"
+  ],
+  "python.autoComplete.extraPaths": [
+    "c:\\Users\\acer\\.vscode\\extensions\\continue.continue-0.6.15-win32-x64"
+  ],
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorBlinking": "phase",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 16,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.showTabs": "single",
+  "window.menuBarVisibility": "compact",
+  "editor.minimap.maxColumn": 20,
+  "editor.minimap.side": "left",
+  "editor.minimap.size": "fit",
+  "editor.minimap.renderCharacters": false,
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 6,
+  "vim.smartRelativeLine": true,
+  "vim.easymotion": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "editor.minimap.enabled": false
+}
+// [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
