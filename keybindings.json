@@ -241,6 +241,11 @@
     "command": "workbench.view.scm",
     "when": "workbench.scm.active"
   },
+  {
+    "key": "alt+s c",
+    "command": "git.checkout",
+    "when": "!operationInProgress"
+  },
   //references
   {
     "key": "alt+n d",
@@ -739,6 +744,11 @@
     "key": "alt+o v",
     "command": "workbench.action.quickOpen",
     "args": "view "
+  },
+  {
+    "key": "alt+o a",
+    "command": "workbench.action.quickOpen",
+    "args": "? "
   },
   {
     "key": "alt+o e",

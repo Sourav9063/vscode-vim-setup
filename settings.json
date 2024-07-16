@@ -218,7 +218,7 @@
   "aws.telemetry": false,
   "Codegeex.Privacy": false,
   "yaml.schemas": {
-    "file:///c%3A/Users/USER/.vscode-insiders/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -443,6 +443,7 @@
   "vimFindHighlight.enableUnderline": false,
   "workbench.tree.enableStickyScroll": false,
   "scm.experimental.showHistoryGraph": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
