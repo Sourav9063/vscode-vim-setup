@@ -1125,6 +1125,10 @@
     "when": "viewContainer.workbench.view.explorer.enabled"
   },
   {
+    "key": "alt+m o",
+    "command": "outline.focus"
+  },
+  {
     "key": "alt+m f",
     "command": "workbench.view.search"
   },
