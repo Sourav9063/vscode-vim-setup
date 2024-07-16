@@ -241,6 +241,72 @@
     "command": "workbench.view.scm",
     "when": "workbench.scm.active"
   },
+  {
+    "key": "alt+s c",
+    "command": "git.checkout",
+    "when": "!operationInProgress"
+  },
+  {
+    "key": "alt+s o",
+    "command": "git.openFile",
+    "when": "config.git.enabled && isInDiffEditor && !git.missing && gitOpenRepositoryCount != '0' && resourceScheme =~ /^git$|^file$/"
+  },
+  {
+    "key": "alt+s d",
+    "command": "diffEditor.toggleCollapseUnchangedRegions",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "alt+s k",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+s j",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+s s",
+    "command": "git.diff.stageHunk",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "alt+s s",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "alt+s u",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "alt+s alt+s",
+    "command": "git.stage"
+  },
+  {
+    "key": "alt+s shift+s",
+    "command": "git.stageAll"
+  },
+  {
+    "key": "alt+s u",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "alt+s alt+u",
+    "command": "git.unstage"
+  },
+  {
+    "key": "alt+s shift+u",
+    "command": "git.unstageAll"
+  },
+  {
+    "key": "alt+s alt+u",
+    "command": "git.unstage",
+    "when": "!operationInProgress"
+  },
   //references
   {
     "key": "alt+n d",
@@ -741,6 +807,11 @@
     "args": "view "
   },
   {
+    "key": "alt+o a",
+    "command": "workbench.action.quickOpen",
+    "args": "? "
+  },
+  {
     "key": "alt+o e",
     "command": "workbench.action.focusFirstEditorGroup"
   },
@@ -780,7 +851,10 @@
   },
   {
     "key": "alt+f o",
-    "command": "outline.focus"
+    "command": "runCommands",
+    "args": {
+      "commands": ["outline.focus", "outline.focus"]
+    }
   },
   {
     "key": "alt+f b",
@@ -831,6 +905,16 @@
   {
     "key": "alt+k",
     "command": "list.focusAnyUp",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "alt+h",
+    "command": "list.collapseAll",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "alt+l",
+    "command": "outline.expand",
     "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   },
   //end list navigate
@@ -1113,6 +1197,13 @@
     "key": "alt+m e",
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "alt+m o",
+    "command": "runCommands",
+    "args": {
+      "commands": ["outline.focus", "outline.focus"]
+    }
   },
   {
     "key": "alt+m f",
