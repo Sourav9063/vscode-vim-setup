@@ -790,7 +790,10 @@
   },
   {
     "key": "alt+f o",
-    "command": "outline.focus"
+    "command": "runCommands",
+    "args": {
+      "commands": ["outline.focus", "outline.focus"]
+    }
   },
   {
     "key": "alt+f b",
@@ -1126,7 +1129,10 @@
   },
   {
     "key": "alt+m o",
-    "command": "outline.focus"
+    "command": "runCommands",
+    "args": {
+      "commands": ["outline.focus", "outline.focus"]
+    }
   },
   {
     "key": "alt+m f",
