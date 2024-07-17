@@ -268,18 +268,18 @@
   },
   {
     "key": "alt+s s",
-    "command": "git.diff.stageHunk",
-    "when": "isInDiffEditor"
+    "command": "git.diff.stageHunk"
+    // "when": "isInDiffEditor"
   },
   {
     "key": "alt+s s",
-    "command": "git.stageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "command": "git.stageSelectedRanges"
+    // "when": "isInDiffEditor && !operationInProgress"
   },
   {
     "key": "alt+s u",
-    "command": "git.unstageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "command": "git.unstageSelectedRanges"
+    // "when": "isInDiffEditor && !operationInProgress"
   },
   {
     "key": "alt+s alt+s",
@@ -291,8 +291,8 @@
   },
   {
     "key": "alt+s u",
-    "command": "git.unstageSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "command": "git.unstageSelectedRanges"
+    // "when": "isInDiffEditor && !operationInProgress"
   },
   {
     "key": "alt+s alt+u",
@@ -304,8 +304,38 @@
   },
   {
     "key": "alt+s alt+u",
-    "command": "git.unstage",
-    "when": "!operationInProgress"
+    "command": "git.unstage"
+    // "when": "!operationInProgress"
+  },
+  {
+    "key": "alt+s k",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+s j",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+s j",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+s k",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+s shift+j",
+    "command": "editor.action.dirtydiff.next",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+s shift+k",
+    "command": "editor.action.dirtydiff.previous",
+    "when": "editorTextFocus && !textCompareEditorActive"
   },
   //references
   {
