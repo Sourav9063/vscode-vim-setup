@@ -233,6 +233,10 @@
     "when": "isInDiffEditor && !operationInProgress"
   },
   {
+    "key": "alt+s shift+r",
+    "command": "git.clean"
+  },
+  {
     "key": "alt+s o",
     "command": "git.openChange"
   },
@@ -1078,11 +1082,11 @@
     "command": "workbench.action.closeAllEditors"
   },
   //suggestion
-  {
-    "key": "space",
-    "command": "hideSuggestWidget",
-    "when": "suggestWidgetVisible && textInputFocus"
-  },
+  // {
+  //   "key": "space",
+  //   "command": "hideSuggestWidget",
+  //   "when": "suggestWidgetVisible && textInputFocus"
+  // },
   {
     "key": "alt+i f",
     "command": "hideSuggestWidget",
