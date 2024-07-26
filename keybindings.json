@@ -256,6 +256,11 @@
     "when": "config.git.enabled && isInDiffEditor && !git.missing && gitOpenRepositoryCount != '0' && resourceScheme =~ /^git$|^file$/"
   },
   {
+    "key": "alt+s shift+o",
+    "command": "git.viewChanges",
+    "when": "!operationInProgress"
+  },
+  {
     "key": "alt+s d",
     "command": "diffEditor.toggleCollapseUnchangedRegions",
     "when": "isInDiffEditor"
@@ -281,17 +286,17 @@
     // "when": "isInDiffEditor && !operationInProgress"
   },
   {
-    "key": "alt+s u",
-    "command": "git.unstageSelectedRanges"
-    // "when": "isInDiffEditor && !operationInProgress"
-  },
-  {
     "key": "alt+s alt+s",
     "command": "git.stage"
   },
   {
     "key": "alt+s shift+s",
     "command": "git.stageAll"
+  },
+  {
+    "key": "alt+s u",
+    "command": "git.unstageSelectedRanges"
+    // "when": "isInDiffEditor && !operationInProgress"
   },
   {
     "key": "alt+s u",
@@ -1371,12 +1376,22 @@
     "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
   },
   {
-    "key": "alt+t n",
+    "key": "alt+t ctrl+shift+n",
     "command": "workbench.action.terminal.moveIntoNewWindow",
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
   },
   {
     "key": "alt+t f",
     "command": "workbench.action.terminal.focusTabs"
+  },
+  {
+    "key": "alt+t n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "alt+t shift+n",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
   }
 ]
