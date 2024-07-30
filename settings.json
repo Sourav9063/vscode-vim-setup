@@ -462,11 +462,10 @@
   "vimFindHighlight.charFontWeight": "900",
   "vimFindHighlight.enableUnderline": false,
   "scm.experimental.showHistoryGraph": true,
-  "editor.minimap.enabled": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.tree.enableStickyScroll": false,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
-  "window.menuBarVisibility": "compact"
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
