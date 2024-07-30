@@ -293,6 +293,14 @@
     {
       "before": ["f", "f"],
       "after": ["left", "<C-o>"]
+    },
+    {
+      "before": ["i", "Enter"],
+      "after": ["<Esc>", "o"]
+    },
+    {
+      "before": ["I", "Enter"],
+      "after": ["<Esc>", "O"]
     }
   ],
   "vim.visualModeKeyBindings": [
