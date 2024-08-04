@@ -352,7 +352,7 @@
     },
     {
       "before": ["t"],
-      "after": ["<leader>", "<leader>"]
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["T"],
@@ -428,7 +428,7 @@
     },
     {
       "before": ["t"],
-      "after": ["<leader>", "<leader>"]
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["T"],
@@ -446,7 +446,7 @@
     },
     {
       "before": ["t"],
-      "after": ["<leader>", "<leader>"]
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["T"],
@@ -471,10 +471,10 @@
     "vscodevim.vim": 1
   },
   "vim.camelCaseMotion.enable": true,
-  "vim.sneak": true,
   "vim.sneakReplacesF": true,
   "vim.sneakUseIgnorecaseAndSmartcase": true,
   "vim.easymotion": true,
+  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf;",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
