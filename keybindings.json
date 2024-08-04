@@ -256,6 +256,11 @@
     "when": "config.git.enabled && isInDiffEditor && !git.missing && gitOpenRepositoryCount != '0' && resourceScheme =~ /^git$|^file$/"
   },
   {
+    "key": "alt+s shift+o",
+    "command": "git.viewChanges",
+    "when": "!operationInProgress"
+  },
+  {
     "key": "alt+s d",
     "command": "diffEditor.toggleCollapseUnchangedRegions",
     "when": "isInDiffEditor"
@@ -281,17 +286,17 @@
     // "when": "isInDiffEditor && !operationInProgress"
   },
   {
-    "key": "alt+s u",
-    "command": "git.unstageSelectedRanges"
-    // "when": "isInDiffEditor && !operationInProgress"
-  },
-  {
     "key": "alt+s alt+s",
     "command": "git.stage"
   },
   {
     "key": "alt+s shift+s",
     "command": "git.stageAll"
+  },
+  {
+    "key": "alt+s u",
+    "command": "git.unstageSelectedRanges"
+    // "when": "isInDiffEditor && !operationInProgress"
   },
   {
     "key": "alt+s u",
@@ -515,6 +520,22 @@
   {
     "key": "alt+g e",
     "command": "workbench.action.minimizeOtherEditors"
+  },
+  {
+    "key": "alt+g shift+e",
+    "command": "workbench.action.minimizeOtherEditorsHideSidebar"
+  },
+  {
+    "key": "alt+g shift+m",
+    "command": "workbench.action.maximizeEditorHideSidebar"
+  },
+  {
+    "key": "alt+g m",
+    "command": "workbench.action.toggleMaximizeEditorGroup"
+  },
+  {
+    "key": "alt+g r",
+    "command": "workbench.action.evenEditorWidths"
   },
   {
     "key": "alt+g t",
@@ -899,16 +920,25 @@
     "key": "alt+f a",
     "command": "workbench.action.focusActivityBar"
   },
-  //breadcrumbs
   {
-    "key": "alt+l",
-    "command": "breadcrumbs.focusNext",
-    "when": "breadcrumbsActive && breadcrumbsVisible"
+    "key": "alt+f s",
+    "command": "editor.action.focusStickyScroll",
+    "when": "config.editor.stickyScroll.enabled && stickyScrollVisible"
   },
   {
-    "key": "alt+h",
-    "command": "breadcrumbs.focusPrevious",
-    "when": "breadcrumbsActive && breadcrumbsVisible"
+    "key": "alt+f d",
+    "command": "workbench.action.focusStatusBar"
+  },
+
+  {
+    "key": "k",
+    "command": "workbench.statusBar.focusNext",
+    "when": "statusBarFocused"
+  },
+  {
+    "key": "j",
+    "command": "workbench.statusBar.focusPrevious",
+    "when": "statusBarFocused"
   },
   //list navigate
   {
@@ -951,7 +981,49 @@
     "command": "outline.expand",
     "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   },
+  // sticky scroll navigation
+  {
+    "key": "l",
+    "command": "editor.action.goToFocusedStickyScrollLine",
+    "when": "stickyScrollFocused"
+  },
+  {
+    "key": "alt+f s",
+    "command": "editor.action.selectEditor",
+    "when": "stickyScrollFocused"
+  },
+  {
+    "key": "j",
+    "command": "editor.action.selectNextStickyScrollLine",
+    "when": "stickyScrollFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.selectPreviousStickyScrollLine",
+    "when": "stickyScrollFocused"
+  },
+  {
+    "key": "h",
+    "command": "list.stickyScroll.collapse",
+    "when": "treestickyScrollFocused"
+  },
+  {
+    "key": "l",
+    "command": "list.stickyScrollselect",
+    "when": "treestickyScrollFocused"
+  },
   //end list navigate
+  //breadcrumbs
+  {
+    "key": "alt+l",
+    "command": "breadcrumbs.focusNext",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  {
+    "key": "alt+h",
+    "command": "breadcrumbs.focusPrevious",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
   // anchor
   {
     "key": "alt+a a",
@@ -1215,6 +1287,10 @@
     "command": "workbench.action.togglePanel"
   },
   {
+    "key": "alt+m shift+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
     "key": "alt+m g",
     "command": "workbench.action.toggleEditorWidths"
   },
@@ -1231,6 +1307,10 @@
     "key": "alt+m e",
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "alt+m shift+e",
+    "command": "workbench.action.maximizeEditorHideSidebar"
   },
   {
     "key": "alt+m o",
@@ -1332,6 +1412,11 @@
     "when": "terminalProcessSupported"
   },
   {
+    "key": "alt+t p",
+    "command": "workbench.action.terminal.moveToEditor",
+    "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
+  },
+  {
     "key": "alt+t e",
     "command": "workbench.action.terminal.moveToEditor",
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
@@ -1371,12 +1456,32 @@
     "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
   },
   {
-    "key": "alt+t n",
+    "key": "alt+t ctrl+shift+n",
     "command": "workbench.action.terminal.moveIntoNewWindow",
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
   },
   {
     "key": "alt+t f",
     "command": "workbench.action.terminal.focusTabs"
+  },
+  {
+    "key": "alt+t n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "alt+t shift+n",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "alt+t alt+h",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t alt+l",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   }
 ]
