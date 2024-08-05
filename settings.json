@@ -357,6 +357,14 @@
     {
       "before": ["T"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["z", "z"],
+      "after": ["z"]
     }
   ],
   "vim.normalModeKeyBindings": [
@@ -419,11 +427,11 @@
       "after": ["O", "<Esc>"]
     },
     {
-      "before": ["z", "j"],
+      "before": ["z", "n"],
       "commands": ["workbench.action.navigateBack"]
     },
     {
-      "before": ["z", "k"],
+      "before": ["z", "m"],
       "commands": ["workbench.action.navigateForward"]
     },
     {
@@ -433,6 +441,14 @@
     {
       "before": ["T"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["z", "z"],
+      "after": ["z"]
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
@@ -451,6 +467,14 @@
     {
       "before": ["T"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["z", "z"],
+      "after": ["z"]
     }
   ],
   "vim.handleKeys": {
