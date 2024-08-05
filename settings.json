@@ -351,12 +351,20 @@
       "after": ["P"]
     },
     {
-      "before": ["t"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
-      "before": ["T"],
+      "before": ["F"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["t"],
+      "after": ["f"]
+    },
+    {
+      "before": ["T"],
+      "after": ["F"]
     },
     {
       "before": ["z"],
@@ -435,12 +443,20 @@
       "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": ["t"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
-      "before": ["T"],
+      "before": ["F"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["t"],
+      "after": ["f"]
+    },
+    {
+      "before": ["T"],
+      "after": ["F"]
     },
     {
       "before": ["z"],
@@ -461,12 +477,20 @@
       "after": ["^"]
     },
     {
-      "before": ["t"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
-      "before": ["T"],
+      "before": ["F"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["t"],
+      "after": ["f"]
+    },
+    {
+      "before": ["T"],
+      "after": ["F"]
     },
     {
       "before": ["z"],
