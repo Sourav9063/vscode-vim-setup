@@ -522,7 +522,7 @@
   "vim.sneakReplacesF": true,
   "vim.sneakUseIgnorecaseAndSmartcase": true,
   "vim.easymotion": true,
-  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf;",
+  "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
