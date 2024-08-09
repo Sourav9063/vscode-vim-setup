@@ -126,6 +126,16 @@
     "command": "fileutils.newFile"
   },
   {
+    "key": "alt+n n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
+    "key": "alt+n shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
     "key": "alt+n alt+n",
     "command": "fileutils.newFileAtRoot"
   },
@@ -503,19 +513,19 @@
   //group
   {
     "key": "alt+g k",
-    "command": "workbench.action.focusAboveGroup"
+    "command": "workbench.action.navigateUp"
   },
   {
     "key": "alt+g j",
-    "command": "workbench.action.focusBelowGroup"
+    "command": "workbench.action.navigateDown"
   },
   {
     "key": "alt+g h",
-    "command": "workbench.action.focusLeftGroup"
+    "command": "workbench.action.navigateLeft"
   },
   {
     "key": "alt+g l",
-    "command": "workbench.action.focusRightGroup"
+    "command": "workbench.action.navigateRight"
   },
   {
     "key": "alt+g e",
