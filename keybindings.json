@@ -1417,14 +1417,14 @@
   },
   //terminal
   {
-    "key": "alt+o shift+t",
-    "command": "workbench.action.createTerminalEditor",
-    "when": "terminalProcessSupported"
-  },
-  {
     "key": "alt+t p",
     "command": "workbench.action.terminal.moveToEditor",
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
+  },
+  {
+    "key": "alt+t p",
+    "command": "workbench.action.terminal.moveToTerminalPanel",
+    "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
   },
   {
     "key": "alt+t e",
@@ -1432,7 +1432,7 @@
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
   },
   {
-    "key": "alt+t shift+t",
+    "key": "alt+t t",
     "command": "workbench.action.createTerminalEditorSide",
     "when": "terminalProcessSupported"
   },
@@ -1441,7 +1441,7 @@
     "command": "workbench.action.quickOpenTerm"
   },
   {
-    "key": "alt+t t",
+    "key": "alt+t shift+t",
     "command": "workbench.action.createTerminalEditor",
     "when": "terminalProcessSupported"
   },
@@ -1459,11 +1459,6 @@
     "key": "alt+t shift+q",
     "command": "workbench.action.terminal.killAll",
     "when": "terminalHasBeenCreated || terminalIsOpen || terminalProcessSupported"
-  },
-  {
-    "key": "alt+t p",
-    "command": "workbench.action.terminal.moveToTerminalPanel",
-    "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
   },
   {
     "key": "alt+t ctrl+shift+n",
@@ -1493,5 +1488,15 @@
     "key": "alt+t alt+l",
     "command": "workbench.action.terminal.resizePaneRight",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+n n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
+    "key": "alt+n shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
   }
 ]
