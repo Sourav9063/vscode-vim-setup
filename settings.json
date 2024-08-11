@@ -371,11 +371,15 @@
       "after": ["<leader>", "<leader>"]
     },
     {
+      "before": ["Z"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+    {
       "before": ["z", "z"],
       "after": ["z"]
     }
   ],
-  "vim.normalModeKeyBindings": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["g", "q"],
       "commands": ["editor.action.quickFix"]
@@ -403,9 +407,7 @@
     {
       "before": ["J"],
       "commands": ["editor.action.moveLinesDownAction"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
+    },
     {
       "before": ["g", "p"],
       "commands": ["editor.action.peekDefinition"]
@@ -461,6 +463,10 @@
     {
       "before": ["z"],
       "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["Z"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
     },
     {
       "before": ["z", "z"],
