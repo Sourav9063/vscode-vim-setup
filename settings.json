@@ -475,30 +475,6 @@
     {
       "before": ["H"],
       "after": ["^"]
-    },
-    {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
-    },
-    {
-      "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
-    },
-    {
-      "before": ["z"],
-      "after": ["<leader>", "<leader>"]
-    },
-    {
-      "before": ["z", "z"],
-      "after": ["z"]
     }
   ],
   "vim.handleKeys": {
@@ -535,11 +511,12 @@
   "vimFindHighlight.charFontWeight": "900",
   "vimFindHighlight.enableUnderline": false,
   "scm.experimental.showHistoryGraph": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.tree.enableStickyScroll": false,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
+  "codium.editorButton": false,
   "editor.minimap.enabled": false,
-  "codium.editorButton": false
+  "terminal.integrated.suggest.enabled": true,
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
