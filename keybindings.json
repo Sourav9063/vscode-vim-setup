@@ -1432,7 +1432,7 @@
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
   },
   {
-    "key": "alt+t t",
+    "key": "alt+t shift+t",
     "command": "workbench.action.createTerminalEditorSide",
     "when": "terminalProcessSupported"
   },
@@ -1441,7 +1441,7 @@
     "command": "workbench.action.quickOpenTerm"
   },
   {
-    "key": "alt+t shift+t",
+    "key": "alt+t t",
     "command": "workbench.action.createTerminalEditor",
     "when": "terminalProcessSupported"
   },
