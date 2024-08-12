@@ -1374,6 +1374,22 @@
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
+  {
+    "key": "alt+i c",
+    "command": "turboConsoleLog.displayLogMessage"
+  },
+  {
+    "key": "alt+i d",
+    "command": "turboConsoleLog.deleteAllLogMessages"
+  },
+  {
+    "key": "alt+i /",
+    "command": "turboConsoleLog.commentAllLogMessages"
+  },
+  {
+    "key": "alt+i shift+/",
+    "command": "turboConsoleLog.uncommentAllLogMessages"
+  },
   //misc
   {
     "key": "alt+k",
