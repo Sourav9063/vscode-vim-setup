@@ -303,7 +303,7 @@
       "after": ["<Esc>", "O"]
     }
   ],
-  "vim.visualModeKeyBindings": [
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["i", "i"],
       "after": ["<Esc>"]
@@ -327,9 +327,7 @@
     {
       "before": ["J"],
       "commands": ["editor.action.moveLinesDownAction"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
+    },
     {
       "before": ["a", "f"],
       "commands": ["editor.action.smartSelect.expand"]
@@ -351,20 +349,20 @@
       "after": ["P"]
     },
     {
-      "before": ["f"],
+      "before": ["g", "s"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
+      "before": ["f"],
+      "after": ["<leader>", "<leader>", "f"]
+    },
+    {
       "before": ["F"],
+      "after": ["<leader>", "<leader>", "F"]
+    },
+    {
+      "before": ["g", "S"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
     },
     {
       "before": ["z"],
@@ -373,6 +371,15 @@
     {
       "before": ["Z"],
       "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+
+    {
+      "before": ["t"],
+      "after": ["f"]
+    },
+    {
+      "before": ["T"],
+      "after": ["F"]
     },
     {
       "before": ["z", "z"],
@@ -445,20 +452,20 @@
       "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": ["f"],
+      "before": ["g", "s"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
+      "before": ["f"],
+      "after": ["<leader>", "<leader>", "f"]
+    },
+    {
       "before": ["F"],
+      "after": ["<leader>", "<leader>", "F"]
+    },
+    {
+      "before": ["g", "S"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
     },
     {
       "before": ["z"],
@@ -467,6 +474,14 @@
     {
       "before": ["Z"],
       "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+    {
+      "before": ["t"],
+      "after": ["f"]
+    },
+    {
+      "before": ["T"],
+      "after": ["F"]
     },
     {
       "before": ["z", "z"],
