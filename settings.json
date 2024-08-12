@@ -349,19 +349,11 @@
       "after": ["P"]
     },
     {
-      "before": ["g", "s"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "f"]
-    },
-    {
       "before": ["F"],
-      "after": ["<leader>", "<leader>", "F"]
-    },
-    {
-      "before": ["g", "S"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
@@ -452,19 +444,11 @@
       "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": ["g", "s"],
+      "before": ["f"],
       "after": ["<leader>", "<leader>", "s"]
     },
     {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "f"]
-    },
-    {
       "before": ["F"],
-      "after": ["<leader>", "<leader>", "F"]
-    },
-    {
-      "before": ["g", "S"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
