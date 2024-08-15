@@ -30,7 +30,6 @@
   "keyboard.dispatch": "keyCode",
   "git.ignoreMissingGitWarning": true,
   "editor.wordWrapColumn": 40,
-  "editor.accessibilitySupport": "off",
   "dart.openDevTools": "flutter",
   "dart.previewFlutterUiGuides": true,
   "dart.previewFlutterUiGuidesCustomTracking": true,

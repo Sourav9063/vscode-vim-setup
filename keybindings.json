@@ -797,18 +797,6 @@
   },
   //quick open
   {
-    "key": "alt+p alt+p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "alt+p p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "alt+o p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
     "key": "alt+o o",
     "command": "workbench.action.quickOpen"
   },
@@ -829,14 +817,6 @@
   {
     "key": "alt+o r",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
-  },
-  {
-    "key": "alt+o h",
-    "command": "workbench.action.openPreviousEditorFromHistory"
-  },
-  {
-    "key": "alt+o alt+h",
-    "command": "workbench.action.openPreviousEditorFromHistory"
   },
   {
     "key": "alt+o j",
@@ -951,6 +931,11 @@
     "when": "statusBarFocused"
   },
   //list navigate
+  {
+    "key": "ctrl+f",
+    "command": "list.toggleFindMode",
+    "when": "listFocus && !inputFocus"
+  },
   {
     "key": "k",
     "command": "list.focusUp",
@@ -1514,5 +1499,20 @@
     "key": "alt+n shift+n",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
+    "key": "alt+t c",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t r",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t r",
+    "command": "editor.action.toggleTabFocusMode",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
   }
 ]
