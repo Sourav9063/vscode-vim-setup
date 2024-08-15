@@ -568,6 +568,20 @@
     "command": "workbench.action.moveEditorToRightGroup"
   },
   {
+    "key": "alt+g o",
+    "command": "workbench.action.toggleEditorGroupLock"
+  },
+  {
+    "key": "alt+g p",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "alt+g p",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
     "key": "alt+g 1",
     "command": "workbench.action.focusFirstEditorGroup"
   },
@@ -802,7 +816,7 @@
   },
   {
     "key": "alt+o alt+o",
-    "command": "workbench.action.quickOpen"
+    "command": "workbench.action.openPreviousEditorFromHistory"
   },
   {
     "key": "alt+o o",
@@ -865,7 +879,15 @@
     "command": "workbench.action.showCommands"
   },
   {
+    "key": "alt+shift+o",
+    "command": "workbench.action.showCommands"
+  },
+  {
     "key": "alt+o s",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "alt+o alt+s",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -1106,6 +1128,10 @@
   {
     "key": "shift+alt+v",
     "command": "toggleVim"
+  },
+  {
+    "key": "escape",
+    "command": "-extension.vim_escape"
   },
   {
     "key": "alt+v",
