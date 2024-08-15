@@ -517,6 +517,7 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
-  "turboConsoleLog.delimiterInsideMessage": ""
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "editor.accessibilitySupport": "off"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
