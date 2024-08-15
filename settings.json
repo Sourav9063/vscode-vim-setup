@@ -264,7 +264,6 @@
   "explorer.openEditors.visible": 20,
   "window.customTitleBarVisibility": "auto",
   "workbench.editor.splitInGroupLayout": "vertical",
-  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.experimentalInlineEdit.enabled": true,
   "search.quickOpen.includeSymbols": true,
   "editor.minimap.maxColumn": 20,
@@ -274,7 +273,8 @@
   "editor.scrollbar.verticalScrollbarSize": 4,
   "editor.quickSuggestions": {
     "comments": "on",
-    "strings": "on"
+    "strings": "on",
+    "other": "inline"
   },
   "terminal.integrated.env.windows": {},
   "vim.insertModeKeyBindings": [
@@ -518,6 +518,7 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
   "turboConsoleLog.delimiterInsideMessage": "",
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "AllAutocomplete.minWordLength": 2
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
