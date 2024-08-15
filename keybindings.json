@@ -1129,10 +1129,10 @@
     "key": "shift+alt+v",
     "command": "toggleVim"
   },
-  {
-    "key": "escape",
-    "command": "-extension.vim_escape"
-  },
+  // {
+  //   "key": "escape",
+  //   "command": "-extension.vim_escape"
+  // },
   {
     "key": "alt+v",
     "command": "extension.vim_escape",
