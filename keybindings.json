@@ -238,9 +238,8 @@
     "command": "git.revertChange"
   },
   {
-    "key": "alt+s r",
-    "command": "git.revertSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "key": "alt+s alt+r",
+    "command": "git.revertSelectedRanges"
   },
   {
     "key": "alt+s shift+r",

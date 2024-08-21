@@ -264,6 +264,7 @@
   "explorer.openEditors.visible": 20,
   "window.customTitleBarVisibility": "auto",
   "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.experimentalInlineEdit.enabled": true,
   "search.quickOpen.includeSymbols": true,
   "editor.minimap.maxColumn": 20,
@@ -273,8 +274,7 @@
   "editor.scrollbar.verticalScrollbarSize": 4,
   "editor.quickSuggestions": {
     "comments": "on",
-    "strings": "on",
-    "other": "inline"
+    "strings": "on"
   },
   "terminal.integrated.env.windows": {},
   "vim.insertModeKeyBindings": [
@@ -508,7 +508,6 @@
   "vimFindHighlight.charFontWeight": "900",
   "vimFindHighlight.enableUnderline": false,
   "scm.experimental.showHistoryGraph": true,
-  "workbench.tree.enableStickyScroll": false,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
   "codium.editorButton": false,
@@ -519,6 +518,6 @@
   "workbench.editor.limit.value": 5,
   "turboConsoleLog.delimiterInsideMessage": "",
   "editor.accessibilitySupport": "off",
-  "AllAutocomplete.minWordLength": 2
+  "terminal.integrated.stickyScroll.enabled": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
