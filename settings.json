@@ -30,7 +30,6 @@
   "keyboard.dispatch": "keyCode",
   "git.ignoreMissingGitWarning": true,
   "editor.wordWrapColumn": 40,
-  "editor.accessibilitySupport": "off",
   "dart.openDevTools": "flutter",
   "dart.previewFlutterUiGuides": true,
   "dart.previewFlutterUiGuidesCustomTracking": true,
@@ -236,7 +235,6 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "turboConsoleLog.insertEmptyLineBeforeLogMessage": true,
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -253,13 +251,8 @@
   "apc.imports": [
     "file:///home/sbh/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
   ],
-  "turboConsoleLog.logMessagePrefix": "#sclg",
-  "turboConsoleLog.delimiterInsideMessage": "",
-  "turboConsoleLog.insertEmptyLineAfterLogMessage": true,
   "turboConsoleLog.insertEnclosingClass": false,
   "turboConsoleLog.insertEnclosingFunction": false,
-  "turboConsoleLog.logMessageSuffix": "",
-  "turboConsoleLog.wrapLogMessage": true,
   "css.lint.validProperties": ["composes"],
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
@@ -268,8 +261,7 @@
   },
   "zenMode.showTabs": "single",
   "workbench.editor.limit.enabled": true,
-  "explorer.openEditors.visible": 15,
-  "workbench.editor.limit.value": 14,
+  "explorer.openEditors.visible": 20,
   "window.customTitleBarVisibility": "auto",
   "workbench.editor.splitInGroupLayout": "vertical",
   "editor.inlineSuggest.suppressSuggestions": true,
@@ -303,7 +295,7 @@
       "after": ["<Esc>", "O"]
     }
   ],
-  "vim.visualModeKeyBindings": [
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["i", "i"],
       "after": ["<Esc>"]
@@ -327,9 +319,7 @@
     {
       "before": ["J"],
       "commands": ["editor.action.moveLinesDownAction"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
+    },
     {
       "before": ["a", "f"],
       "commands": ["editor.action.smartSelect.expand"]
@@ -359,6 +349,15 @@
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["Z"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+
+    {
       "before": ["t"],
       "after": ["f"]
     },
@@ -367,15 +366,11 @@
       "after": ["F"]
     },
     {
-      "before": ["z"],
-      "after": ["<leader>", "<leader>"]
-    },
-    {
       "before": ["z", "z"],
       "after": ["z"]
     }
   ],
-  "vim.normalModeKeyBindings": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["g", "q"],
       "commands": ["editor.action.quickFix"]
@@ -403,9 +398,7 @@
     {
       "before": ["J"],
       "commands": ["editor.action.moveLinesDownAction"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
+    },
     {
       "before": ["g", "p"],
       "commands": ["editor.action.peekDefinition"]
@@ -451,16 +444,20 @@
       "after": ["<leader>", "<leader>", "<leader>", "j"]
     },
     {
+      "before": ["z"],
+      "after": ["<leader>", "<leader>"]
+    },
+    {
+      "before": ["Z"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+    },
+    {
       "before": ["t"],
       "after": ["f"]
     },
     {
       "before": ["T"],
       "after": ["F"]
-    },
-    {
-      "before": ["z"],
-      "after": ["<leader>", "<leader>"]
     },
     {
       "before": ["z", "z"],
@@ -475,30 +472,6 @@
     {
       "before": ["H"],
       "after": ["^"]
-    },
-    {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
-    },
-    {
-      "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
-    },
-    {
-      "before": ["z"],
-      "after": ["<leader>", "<leader>"]
-    },
-    {
-      "before": ["z", "z"],
-      "after": ["z"]
     }
   ],
   "vim.handleKeys": {
@@ -528,18 +501,23 @@
   "workbench.activityBar.location": "top",
   "vimFindHighlight.charPrimaryColor": "#FF0000",
   "vimFindHighlight.charSecondaryColor": "#ffc300",
-  "editor.cursorSurroundingLines": 8,
+  "editor.cursorSurroundingLines": 4,
   "editor.wordSeparators": "-_`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "diffEditor.renderSideBySide": true,
   "go.toolsManagement.autoUpdate": true,
   "vimFindHighlight.charFontWeight": "900",
   "vimFindHighlight.enableUnderline": false,
   "scm.experimental.showHistoryGraph": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "workbench.tree.enableStickyScroll": false,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
+  "codium.editorButton": false,
   "editor.minimap.enabled": false,
-  "codium.editorButton": false
+  "terminal.integrated.suggest.enabled": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.stickyScroll.enabled": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

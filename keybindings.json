@@ -126,6 +126,16 @@
     "command": "fileutils.newFile"
   },
   {
+    "key": "alt+n n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
+    "key": "alt+n shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
     "key": "alt+n alt+n",
     "command": "fileutils.newFileAtRoot"
   },
@@ -228,9 +238,8 @@
     "command": "git.revertChange"
   },
   {
-    "key": "alt+s r",
-    "command": "git.revertSelectedRanges",
-    "when": "isInDiffEditor && !operationInProgress"
+    "key": "alt+s alt+r",
+    "command": "git.revertSelectedRanges"
   },
   {
     "key": "alt+s shift+r",
@@ -503,19 +512,19 @@
   //group
   {
     "key": "alt+g k",
-    "command": "workbench.action.focusAboveGroup"
+    "command": "workbench.action.navigateUp"
   },
   {
     "key": "alt+g j",
-    "command": "workbench.action.focusBelowGroup"
+    "command": "workbench.action.navigateDown"
   },
   {
     "key": "alt+g h",
-    "command": "workbench.action.focusLeftGroup"
+    "command": "workbench.action.navigateLeft"
   },
   {
     "key": "alt+g l",
-    "command": "workbench.action.focusRightGroup"
+    "command": "workbench.action.navigateRight"
   },
   {
     "key": "alt+g e",
@@ -556,6 +565,20 @@
   {
     "key": "alt+g alt+l",
     "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "alt+g o",
+    "command": "workbench.action.toggleEditorGroupLock"
+  },
+  {
+    "key": "alt+g p",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "alt+g p",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
   },
   {
     "key": "alt+g 1",
@@ -787,24 +810,12 @@
   },
   //quick open
   {
-    "key": "alt+p alt+p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "alt+p p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "alt+o p",
-    "command": "workbench.action.quickOpen"
-  },
-  {
     "key": "alt+o o",
     "command": "workbench.action.quickOpen"
   },
   {
     "key": "alt+o alt+o",
-    "command": "workbench.action.quickOpen"
+    "command": "workbench.action.openPreviousEditorFromHistory"
   },
   {
     "key": "alt+o o",
@@ -819,14 +830,6 @@
   {
     "key": "alt+o r",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
-  },
-  {
-    "key": "alt+o h",
-    "command": "workbench.action.openPreviousEditorFromHistory"
-  },
-  {
-    "key": "alt+o alt+h",
-    "command": "workbench.action.openPreviousEditorFromHistory"
   },
   {
     "key": "alt+o j",
@@ -875,7 +878,15 @@
     "command": "workbench.action.showCommands"
   },
   {
+    "key": "alt+shift+o",
+    "command": "workbench.action.showCommands"
+  },
+  {
     "key": "alt+o s",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "alt+o alt+s",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -941,6 +952,11 @@
     "when": "statusBarFocused"
   },
   //list navigate
+  {
+    "key": "ctrl+f",
+    "command": "list.toggleFindMode",
+    "when": "listFocus && !inputFocus"
+  },
   {
     "key": "k",
     "command": "list.focusUp",
@@ -1112,6 +1128,10 @@
     "key": "shift+alt+v",
     "command": "toggleVim"
   },
+  // {
+  //   "key": "escape",
+  //   "command": "-extension.vim_escape"
+  // },
   {
     "key": "alt+v",
     "command": "extension.vim_escape",
@@ -1252,11 +1272,6 @@
   },
   {
     "key": "alt+i alt+l",
-    "command": "editor.action.inlineSuggest.commit",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "alt+i shift+l",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
@@ -1364,6 +1379,22 @@
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
+  {
+    "key": "alt+i c",
+    "command": "turboConsoleLog.displayLogMessage"
+  },
+  {
+    "key": "alt+i d",
+    "command": "turboConsoleLog.deleteAllLogMessages"
+  },
+  {
+    "key": "alt+i /",
+    "command": "turboConsoleLog.commentAllLogMessages"
+  },
+  {
+    "key": "alt+i shift+/",
+    "command": "turboConsoleLog.uncommentAllLogMessages"
+  },
   //misc
   {
     "key": "alt+k",
@@ -1407,14 +1438,14 @@
   },
   //terminal
   {
-    "key": "alt+o shift+t",
-    "command": "workbench.action.createTerminalEditor",
-    "when": "terminalProcessSupported"
-  },
-  {
     "key": "alt+t p",
     "command": "workbench.action.terminal.moveToEditor",
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
+  },
+  {
+    "key": "alt+t p",
+    "command": "workbench.action.terminal.moveToTerminalPanel",
+    "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
   },
   {
     "key": "alt+t e",
@@ -1451,11 +1482,6 @@
     "when": "terminalHasBeenCreated || terminalIsOpen || terminalProcessSupported"
   },
   {
-    "key": "alt+t p",
-    "command": "workbench.action.terminal.moveToTerminalPanel",
-    "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
-  },
-  {
     "key": "alt+t ctrl+shift+n",
     "command": "workbench.action.terminal.moveIntoNewWindow",
     "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
@@ -1483,5 +1509,30 @@
     "key": "alt+t alt+l",
     "command": "workbench.action.terminal.resizePaneRight",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+n n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
+    "key": "alt+n shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  },
+  {
+    "key": "alt+t c",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t r",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t r",
+    "command": "editor.action.toggleTabFocusMode",
+    "when": "terminalHasBeenCreated || terminalProcessSupported"
   }
 ]
