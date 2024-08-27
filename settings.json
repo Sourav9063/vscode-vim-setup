@@ -265,7 +265,6 @@
   "window.customTitleBarVisibility": "auto",
   "workbench.editor.splitInGroupLayout": "vertical",
   "editor.inlineSuggest.suppressSuggestions": true,
-  "editor.experimentalInlineEdit.enabled": true,
   "search.quickOpen.includeSymbols": true,
   "editor.minimap.maxColumn": 20,
   "editor.minimap.showSlider": "always",
@@ -511,13 +510,15 @@
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
   "codium.editorButton": false,
-  "editor.minimap.enabled": false,
   "terminal.integrated.suggest.enabled": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
   "turboConsoleLog.delimiterInsideMessage": "",
   "editor.accessibilitySupport": "off",
-  "terminal.integrated.stickyScroll.enabled": true
+  "terminal.integrated.stickyScroll.enabled": true,
+  "editor.experimentalInlineEdit.enabled": true,
+  "svg.preview.mode": "svg",
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
