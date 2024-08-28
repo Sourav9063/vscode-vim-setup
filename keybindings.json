@@ -101,8 +101,12 @@
     "command": "extension.git-file-history"
   },
   {
-    "key": "ctrl+k 0",
+    "key": "ctrl+shift+0",
     "command": "editor.action.fontZoomReset"
+  },
+  {
+    "key": "ctrl+shift+alt+0",
+    "command": "workbench.action.zoomReset"
   },
   {
     "key": "ctrl+shift+alt+=",
@@ -1534,5 +1538,19 @@
     "key": "alt+t r",
     "command": "editor.action.toggleTabFocusMode",
     "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t 0",
+    "command": "workbench.action.terminal.fontZoomReset"
+  },
+  {
+    "key": "alt+t -",
+    "command": "workbench.action.terminal.fontZoomOut",
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+t =",
+    "command": "workbench.action.terminal.fontZoomIn",
+    "when": "terminalProcessSupported"
   }
 ]
