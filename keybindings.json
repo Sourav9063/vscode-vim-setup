@@ -1132,13 +1132,14 @@
     "key": "shift+alt+v",
     "command": "toggleVim"
   },
-  // {
-  //   "key": "escape",
-  //   "command": "-extension.vim_escape"
-  // },
   {
-    "key": "alt+v",
+    "key": "escape",
     "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible && !inlineSuggestionVisible"
+  },
+  {
+    "key": "escape",
+    "command": "-extension.vim_escape",
     "when": "editorTextFocus && vim.active && !inDebugRepl"
   },
   {
@@ -1205,8 +1206,8 @@
   },
   {
     "key": "escape",
-    "command": "-editor.action.inlineSuggest.hide",
-    "when": "inlineSuggestionVisible"
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineSuggestionVisible && !suggestWidgetVisible"
   },
   {
     "key": "tab",
@@ -1276,11 +1277,6 @@
   },
   {
     "key": "alt+i alt+l",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "alt+shift+l",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },

@@ -282,7 +282,7 @@
       "after": ["<Esc>"]
     },
     {
-      "before": ["f", "f"],
+      "before": ["h", "h"],
       "after": ["left", "<C-o>"]
     },
     {
