@@ -150,7 +150,6 @@
     "javascript",
     "javascriptreact"
   ],
-  "files.autoSave": "onFocusChange",
   "git.confirmSync": false,
   "window.commandCenter": true,
   "explorer.confirmDragAndDrop": false,
@@ -519,6 +518,7 @@
   "terminal.integrated.stickyScroll.enabled": true,
   "editor.experimentalInlineEdit.enabled": true,
   "svg.preview.mode": "svg",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "files.autoSave": "onFocusChange"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
