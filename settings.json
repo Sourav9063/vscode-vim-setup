@@ -30,9 +30,6 @@
   "keyboard.dispatch": "keyCode",
   "git.ignoreMissingGitWarning": true,
   "editor.wordWrapColumn": 40,
-  "dart.openDevTools": "flutter",
-  "dart.previewFlutterUiGuides": true,
-  "dart.previewFlutterUiGuidesCustomTracking": true,
   "files.autoSaveDelay": 100,
   "[dart]": {
     "editor.formatOnSave": true,
@@ -59,30 +56,22 @@
     "editorCursor.foreground": "#ff0000",
     "[Abyss]": {
       "editor.selectionBackground": "#0d335a",
-      // "editor.background": "#030C1B",
       "statusBar.background": "#170038",
       "statusBar.foreground": "#b6b5b5",
       "statusBar.border": "#232C34",
       "activityBar.activeBackground": "#280858",
       "tab.activeBackground": "#280858",
       "tab.activeBorder": "#9900ff",
-      // "sideBar.background": "#08002a",
       "sideBar.border": "#232C34",
       "tab.hoverBorder": "#420099",
       "editorLineNumber.foreground": "#3e505a",
-      // "sideBar.background": "#22292f",
       "sideBarSectionHeader.background": "#051729",
       "scrollbarSlider.background": "#160a2e"
-      // "titleBar.activeBackground": "#3f0864",
     }
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "kite.showWelcomeNotificationOnStartup": false,
   "git.suggestSmartCommit": false,
-  "dart.debugExternalLibraries": false,
-  "dart.debugSdkLibraries": false,
-  "dart.devToolsBrowser": "default",
   "python.languageServer": "Pylance",
   "[json]": {
     "editor.quickSuggestions": {
@@ -100,7 +89,6 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "java.configuration.runtimes": [],
   "files.defaultLanguage": "${activeEditorLanguage}",
   "C_Cpp.intelliSenseUpdateDelay": 500,
   "notebook.cellToolbarLocation": {
@@ -126,23 +114,11 @@
     "userid",
     "webfonts"
   ],
-  "tabnine.experimentalAutoImports": true,
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.intelliSenseEngineFallback": "Enabled",
   "terminal.integrated.gpuAcceleration": "off",
   "editor.guides.bracketPairs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": true,
-    "javascript": true,
-    "css": true
-  },
-  // "dart.flutterSdkPaths": [
-  //   "C:/Users/USER/fvm/versions"
-  // ]
   "auto-rename-tag.activationOnLanguage": [
     "html",
     "xml",
@@ -175,27 +151,11 @@
   "workbench.list.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "leetcode.workspaceFolder": "e:\\cpp all codes\\leetCode",
-  "leetcode.defaultLanguage": "cpp",
-  "leetcode.editor.shortcuts": ["submit", "test", "solution"],
-  "leetcode.problems.sortStrategy": "Acceptance Rate (Descending)",
-  "leetcode.hint.commandShortcut": false,
-  "leetcode.hint.configWebviewMarkdown": false,
   "[python]": {
     "editor.formatOnType": true
   },
   "window.titleBarStyle": "custom",
   "git.mergeEditor": true,
-  "javascript-repl.outputChannel": true,
-  "javascript-repl.useWorkers": true,
-  "javascript-repl.applyResults": "onSave",
-  "javascript-repl.gutters": {
-    "covered": "#2ecc40",
-    "uncovered": "#dddddd",
-    "error": "#ff4136",
-    "partially": "#ffb90f"
-  },
-  "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
   "code-runner.runInTerminal": true,
   "workbench.sideBar.location": "right",
   "editor.inlineSuggest.enabled": true,
@@ -204,17 +164,13 @@
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
-  "css.enabledLanguages": ["html", "js", "jsx"],
   "console-ninja.featureSet": "Community",
-  "easycode.userEmail": "sourav.shellbeehaken@gmail.com",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
-  "aws.telemetry": false,
-  "Codegeex.Privacy": false,
   "yaml.schemas": {
     "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
@@ -246,10 +202,6 @@
     "projectKey": "KOR"
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "animations.Install-Method": "Apc Customize UI++",
-  "apc.imports": [
-    "file:///home/sbh/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
-  ],
   "turboConsoleLog.insertEnclosingClass": false,
   "turboConsoleLog.insertEnclosingFunction": false,
   "css.lint.validProperties": ["composes"],
@@ -490,25 +442,19 @@
     "vscodevim.vim": 1
   },
   "vim.camelCaseMotion.enable": true,
-  "vim.sneakReplacesF": true,
-  "vim.sneakUseIgnorecaseAndSmartcase": true,
   "vim.easymotion": true,
   "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
-  "vimFindHighlight.charPrimaryColor": "#FF0000",
-  "vimFindHighlight.charSecondaryColor": "#ffc300",
   "editor.cursorSurroundingLines": 4,
   "editor.wordSeparators": "-_`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "diffEditor.renderSideBySide": true,
   "go.toolsManagement.autoUpdate": true,
-  "vimFindHighlight.charFontWeight": "900",
-  "vimFindHighlight.enableUnderline": false,
-  "scm.experimental.showHistoryGraph": true,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
-  "codium.editorButton": false,
   "terminal.integrated.suggest.enabled": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
@@ -518,7 +464,7 @@
   "terminal.integrated.stickyScroll.enabled": true,
   "editor.experimentalInlineEdit.enabled": true,
   "svg.preview.mode": "svg",
-  "editor.minimap.enabled": false,
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
