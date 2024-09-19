@@ -230,7 +230,7 @@
       "after": ["<Esc>"]
     },
     {
-      "before": ["h", "h"],
+      "before": ["j", "j"],
       "after": ["left", "<C-o>"]
     },
     {
@@ -462,6 +462,8 @@
   "editor.experimentalInlineEdit.enabled": true,
   "svg.preview.mode": "svg",
   "files.autoSave": "onFocusChange",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "atlascode.jira.todoIssues.enabled": false,
+  "editor.smoothScrolling": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
