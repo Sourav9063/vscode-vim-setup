@@ -428,7 +428,10 @@
     "<C-a>": false,
     "<C-x>": false,
     "<C-c>": false,
-    "<C-p>": false
+    "<C-l>": false,
+    "<C-i>": false,
+    "<C-p>": false,
+    "<C-k>": false
   },
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
@@ -462,8 +465,13 @@
   "editor.experimentalInlineEdit.enabled": true,
   "svg.preview.mode": "svg",
   "files.autoSave": "onFocusChange",
-  "editor.minimap.enabled": false,
   "atlascode.jira.todoIssues.enabled": false,
-  "editor.smoothScrolling": true
+  "editor.smoothScrolling": true,
+  "continue.enableTabAutocomplete": false,
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "continue.showInlineTip": false,
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
