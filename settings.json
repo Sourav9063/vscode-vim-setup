@@ -434,7 +434,7 @@
     "<C-k>": false
   },
   "vim.useSystemClipboard": true,
-  "vim.timeout": 250,
+  "vim.timeout": 350,
   "vim.highlightedyank.enable": true,
   "editor.minimap.renderCharacters": false,
   "vim.smartRelativeLine": true,
