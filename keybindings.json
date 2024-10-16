@@ -101,8 +101,12 @@
     "command": "extension.git-file-history"
   },
   {
-    "key": "ctrl+k 0",
+    "key": "ctrl+shift+0",
     "command": "editor.action.fontZoomReset"
+  },
+  {
+    "key": "ctrl+shift+alt+0",
+    "command": "workbench.action.zoomReset"
   },
   {
     "key": "ctrl+shift+alt+=",
@@ -1128,13 +1132,14 @@
     "key": "shift+alt+v",
     "command": "toggleVim"
   },
-  // {
-  //   "key": "escape",
-  //   "command": "-extension.vim_escape"
-  // },
   {
-    "key": "alt+v",
+    "key": "escape",
     "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible && !inlineSuggestionVisible"
+  },
+  {
+    "key": "escape",
+    "command": "-extension.vim_escape",
     "when": "editorTextFocus && vim.active && !inDebugRepl"
   },
   {
@@ -1201,8 +1206,8 @@
   },
   {
     "key": "escape",
-    "command": "-editor.action.inlineSuggest.hide",
-    "when": "inlineSuggestionVisible"
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineSuggestionVisible && !suggestWidgetVisible"
   },
   {
     "key": "tab",
@@ -1272,11 +1277,6 @@
   },
   {
     "key": "alt+i alt+l",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "alt+shift+l",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
@@ -1448,12 +1448,7 @@
     "when": "terminalEditorActive && terminalHasBeenCreated || terminalEditorActive && terminalProcessSupported"
   },
   {
-    "key": "alt+t e",
-    "command": "workbench.action.terminal.moveToEditor",
-    "when": "terminalHasBeenCreated && terminalIsOpen || terminalIsOpen && terminalProcessSupported"
-  },
-  {
-    "key": "alt+t shift+t",
+    "key": "alt+t t",
     "command": "workbench.action.createTerminalEditorSide",
     "when": "terminalProcessSupported"
   },
@@ -1462,7 +1457,7 @@
     "command": "workbench.action.quickOpenTerm"
   },
   {
-    "key": "alt+t t",
+    "key": "alt+t alt+t",
     "command": "workbench.action.createTerminalEditor",
     "when": "terminalProcessSupported"
   },
@@ -1534,5 +1529,19 @@
     "key": "alt+t r",
     "command": "editor.action.toggleTabFocusMode",
     "when": "terminalHasBeenCreated || terminalProcessSupported"
+  },
+  {
+    "key": "alt+t 0",
+    "command": "workbench.action.terminal.fontZoomReset"
+  },
+  {
+    "key": "alt+t -",
+    "command": "workbench.action.terminal.fontZoomOut",
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+t =",
+    "command": "workbench.action.terminal.fontZoomIn",
+    "when": "terminalProcessSupported"
   }
 ]
