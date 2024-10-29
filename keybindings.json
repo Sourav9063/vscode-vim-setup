@@ -1290,6 +1290,10 @@
     "command": "workbench.action.customizeLayout"
   },
   {
+    "key": "alt+m shift+m",
+    "command": "workbench.action.moveView"
+  },
+  {
     "key": "alt+m h",
     "command": "workbench.action.toggleAuxiliaryBar"
   },

@@ -473,6 +473,7 @@
     "*": true
   },
   "continue.showInlineTip": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "window.newWindowProfile": "Default"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
