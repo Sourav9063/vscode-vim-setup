@@ -513,6 +513,18 @@
     "command": "-codeium.diffActionFollowup",
     "when": "editorTextFocus && !inlineSuggestionsVisible"
   },
+  //nvim
+  {
+    "command": "editor.action.moveLinesUpAction",
+    "key": "alt+k",
+    "when": "textInputFocus  && neovim.mode != insert"
+  },
+  {
+    "command": "editor.action.moveLinesDownAction",
+    "key": "alt+j",
+    "when": "textInputFocus  && neovim.mode != insert"
+  },
+
   //group
   {
     "key": "alt+g k",
@@ -1128,30 +1140,30 @@
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
-  {
-    "key": "shift+alt+v",
-    "command": "toggleVim"
-  },
-  {
-    "key": "escape",
-    "command": "extension.vim_escape",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible && !inlineSuggestionVisible"
-  },
-  {
-    "key": "escape",
-    "command": "-extension.vim_escape",
-    "when": "editorTextFocus && vim.active && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+shift+v",
-    "command": "extension.vim_ctrl+v",
-    "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-extension.vim_ctrl+v",
-    "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
-  },
+  // {
+  //   "key": "shift+alt+v",
+  //   "command": "toggleVim"
+  // },
+  // {
+  //   "key": "escape",
+  //   "command": "extension.vim_escape",
+  //   "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetVisible && !inlineSuggestionVisible"
+  // },
+  // {
+  //   "key": "escape",
+  //   "command": "-extension.vim_escape",
+  //   "when": "editorTextFocus && vim.active && !inDebugRepl"
+  // },
+  // {
+  //   "key": "ctrl+shift+v",
+  //   "command": "extension.vim_ctrl+v",
+  //   "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+  // },
+  // {
+  //   "key": "ctrl+v",
+  //   "command": "-extension.vim_ctrl+v",
+  //   "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+  // },
   {
     "key": "g r",
     "command": "closeReferenceSearch",

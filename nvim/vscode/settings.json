@@ -224,229 +224,236 @@
     "strings": "on"
   },
   "terminal.integrated.env.windows": {},
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["i", "i"],
-      "after": ["<Esc>"]
-    },
-    {
-      "before": ["j", "j"],
-      "after": ["left", "<C-o>"]
-    },
-    {
-      "before": ["i", "Enter"],
-      "after": ["<Esc>", "o"]
-    },
-    {
-      "before": ["I", "Enter"],
-      "after": ["<Esc>", "O"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["i", "i"],
-      "after": ["<Esc>"]
-    },
-    {
-      "before": ["g", "q"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
-    },
-    {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
-    },
-    {
-      "before": ["a", "f"],
-      "commands": ["editor.action.smartSelect.expand"]
-    },
-    {
-      "before": ["a", "b"],
-      "commands": ["editor.action.smartSelect.shrink"]
-    },
-    {
-      "before": ["a", "o"],
-      "commands": ["editor.emmet.action.balanceOut"]
-    },
-    {
-      "before": ["a", "i"],
-      "commands": ["editor.emmet.action.balanceIn"]
-    },
-    {
-      "before": ["p"],
-      "after": ["P"]
-    },
-    {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
-    },
-    {
-      "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["z"],
-      "after": ["<leader>", "<leader>"]
-    },
-    {
-      "before": ["Z"],
-      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
-    },
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["i", "i"],
+  //     "after": ["<Esc>"]
+  //   },
+  //   {
+  //     "before": ["j", "j"],
+  //     "after": ["left", "<C-o>"]
+  //   },
+  //   {
+  //     "before": ["i", "Enter"],
+  //     "after": ["<Esc>", "o"]
+  //   },
+  //   {
+  //     "before": ["I", "Enter"],
+  //     "after": ["<Esc>", "O"]
+  //   }
+  // ],
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["i", "i"],
+  //     "after": ["<Esc>"]
+  //   },
+  //   {
+  //     "before": ["g", "q"],
+  //     "commands": ["editor.action.quickFix"]
+  //   },
+  //   {
+  //     "before": ["L"],
+  //     "after": ["$"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["^"]
+  //   },
+  //   {
+  //     "before": ["K"],
+  //     "commands": ["editor.action.moveLinesUpAction"]
+  //   },
+  //   {
+  //     "before": ["J"],
+  //     "commands": ["editor.action.moveLinesDownAction"]
+  //   },
+  //   {
+  //     "before": ["a", "f"],
+  //     "commands": ["editor.action.smartSelect.expand"]
+  //   },
+  //   {
+  //     "before": ["a", "b"],
+  //     "commands": ["editor.action.smartSelect.shrink"]
+  //   },
+  //   {
+  //     "before": ["a", "o"],
+  //     "commands": ["editor.emmet.action.balanceOut"]
+  //   },
+  //   {
+  //     "before": ["a", "i"],
+  //     "commands": ["editor.emmet.action.balanceIn"]
+  //   },
+  //   {
+  //     "before": ["p"],
+  //     "after": ["P"]
+  //   },
+  //   {
+  //     "before": ["f"],
+  //     "after": ["<leader>", "<leader>", "s"]
+  //   },
+  //   {
+  //     "before": ["F"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "j"]
+  //   },
+  //   {
+  //     "before": ["z"],
+  //     "after": ["<leader>", "<leader>"]
+  //   },
+  //   {
+  //     "before": ["Z"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+  //   },
 
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
-    },
-    {
-      "before": ["z", "z"],
-      "after": ["z"]
+  //   {
+  //     "before": ["t"],
+  //     "after": ["f"]
+  //   },
+  //   {
+  //     "before": ["T"],
+  //     "after": ["F"]
+  //   },
+  //   {
+  //     "before": ["z", "z"],
+  //     "after": ["z"]
+  //   }
+  // ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["g", "q"],
+  //     "commands": ["editor.action.quickFix"]
+  //   },
+  //   {
+  //     "before": ["g", "r"],
+  //     "commands": ["editor.action.goToReferences"]
+  //   },
+  //   {
+  //     "before": ["g", "f"],
+  //     "commands": ["editor.action.goToImplementation"]
+  //   },
+  //   {
+  //     "before": ["L"],
+  //     "after": ["$"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["^"]
+  //   },
+  //   {
+  //     "before": ["K"],
+  //     "commands": ["editor.action.moveLinesUpAction"]
+  //   },
+  //   {
+  //     "before": ["J"],
+  //     "commands": ["editor.action.moveLinesDownAction"]
+  //   },
+  //   {
+  //     "before": ["g", "p"],
+  //     "commands": ["editor.action.peekDefinition"]
+  //   },
+  //   {
+  //     "before": ["g", "h"],
+  //     "commands": ["editor.action.showDefinitionPreviewHover"]
+  //   },
+  //   {
+  //     "before": ["g", "y"],
+  //     "commands": [":reg"]
+  //   },
+  //   {
+  //     "before": ["g", "j"],
+  //     "commands": [":ju"]
+  //   },
+  //   {
+  //     "before": ["g", "x"],
+  //     "commands": [":marks"]
+  //   },
+  //   {
+  //     "before": ["Enter"],
+  //     "after": ["o", "<Esc>"]
+  //   },
+  //   {
+  //     "before": ["g", "Enter"],
+  //     "after": ["O", "<Esc>"]
+  //   },
+  //   {
+  //     "before": ["z", "n"],
+  //     "commands": ["workbench.action.navigateBack"]
+  //   },
+  //   {
+  //     "before": ["z", "m"],
+  //     "commands": ["workbench.action.navigateForward"]
+  //   },
+  //   {
+  //     "before": ["f"],
+  //     "after": ["<leader>", "<leader>", "s"]
+  //   },
+  //   {
+  //     "before": ["F"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "j"]
+  //   },
+  //   {
+  //     "before": ["z"],
+  //     "after": ["<leader>", "<leader>"]
+  //   },
+  //   {
+  //     "before": ["Z"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+  //   },
+  //   {
+  //     "before": ["t"],
+  //     "after": ["f"]
+  //   },
+  //   {
+  //     "before": ["T"],
+  //     "after": ["F"]
+  //   },
+  //   {
+  //     "before": ["z", "z"],
+  //     "after": ["z"]
+  //   }
+  // ],
+  // "vim.operatorPendingModeKeyBindings": [
+  //   {
+  //     "before": ["L"],
+  //     "after": ["$"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["^"]
+  //   }
+  // ],
+  // "vim.handleKeys": {
+  //   "<C-f>": false,
+  //   "<C-s>": false,
+  //   "<C-z>": false,
+  //   "<C-a>": false,
+  //   "<C-x>": false,
+  //   "<C-c>": false,
+  //   "<C-l>": false,
+  //   "<C-i>": false,
+  //   "<C-p>": false,
+  //   "<C-k>": false
+  // },
+  // "vim.useSystemClipboard": true,
+  // "vim.timeout": 350,
+  // "vim.highlightedyank.enable": true,
+
+  // "vim.smartRelativeLine": true,
+  // "vim.leader": "<Space>",
+  // "vim.camelCaseMotion.enable": true,
+  // "vim.easymotion": true,
+  // "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
+  // "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  // "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+
+  "vscode-neovim.compositeKeys": {
+    "ii": {
+      "command": "vscode-neovim.escape"
     }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["g", "q"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
-    },
-    {
-      "before": ["g", "f"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
-    },
-    {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
-    },
-    {
-      "before": ["g", "p"],
-      "commands": ["editor.action.peekDefinition"]
-    },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
-    },
-    {
-      "before": ["g", "y"],
-      "commands": [":reg"]
-    },
-    {
-      "before": ["g", "j"],
-      "commands": [":ju"]
-    },
-    {
-      "before": ["g", "x"],
-      "commands": [":marks"]
-    },
-    {
-      "before": ["Enter"],
-      "after": ["o", "<Esc>"]
-    },
-    {
-      "before": ["g", "Enter"],
-      "after": ["O", "<Esc>"]
-    },
-    {
-      "before": ["z", "n"],
-      "commands": ["workbench.action.navigateBack"]
-    },
-    {
-      "before": ["z", "m"],
-      "commands": ["workbench.action.navigateForward"]
-    },
-    {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
-    },
-    {
-      "before": ["F"],
-      "after": ["<leader>", "<leader>", "<leader>", "j"]
-    },
-    {
-      "before": ["z"],
-      "after": ["<leader>", "<leader>"]
-    },
-    {
-      "before": ["Z"],
-      "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
-    },
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
-    },
-    {
-      "before": ["z", "z"],
-      "after": ["z"]
-    }
-  ],
-  "vim.operatorPendingModeKeyBindings": [
-    {
-      "before": ["L"],
-      "after": ["$"]
-    },
-    {
-      "before": ["H"],
-      "after": ["^"]
-    }
-  ],
-  "vim.handleKeys": {
-    "<C-f>": false,
-    "<C-s>": false,
-    "<C-z>": false,
-    "<C-a>": false,
-    "<C-x>": false,
-    "<C-c>": false,
-    "<C-l>": false,
-    "<C-i>": false,
-    "<C-p>": false,
-    "<C-k>": false
   },
-  "vim.useSystemClipboard": true,
-  "vim.timeout": 350,
-  "vim.highlightedyank.enable": true,
   "editor.minimap.renderCharacters": false,
-  "vim.smartRelativeLine": true,
-  "vim.leader": "<Space>",
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "asvetliakov.vscode-neovim": 1
   },
-  "vim.camelCaseMotion.enable": true,
-  "vim.easymotion": true,
-  "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
-  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
-  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
@@ -474,6 +481,7 @@
   },
   "continue.showInlineTip": false,
   "editor.minimap.enabled": false,
-  "window.newWindowProfile": "Default"
+  "window.newWindowProfile": "Default",
+  "editor.lineNumbers": "relative"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
