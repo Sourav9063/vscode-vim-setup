@@ -452,8 +452,7 @@
   },
   "editor.minimap.renderCharacters": false,
   "extensions.experimental.affinity": {
-    "vscodevim.vim": -2,
-    "asvetliakov.vscode-neovim": -2
+    "asvetliakov.vscode-neovim": 1
   },
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",

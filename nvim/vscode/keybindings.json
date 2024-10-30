@@ -513,6 +513,18 @@
     "command": "-codeium.diffActionFollowup",
     "when": "editorTextFocus && !inlineSuggestionsVisible"
   },
+  //nvim
+  {
+    "command": "editor.action.moveLinesUpAction",
+    "key": "alt+k",
+    "when": "textInputFocus  && neovim.mode != insert"
+  },
+  {
+    "command": "editor.action.moveLinesDownAction",
+    "key": "alt+j",
+    "when": "textInputFocus  && neovim.mode != insert"
+  },
+
   //group
   {
     "key": "alt+g k",
