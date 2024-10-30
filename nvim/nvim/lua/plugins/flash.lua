@@ -8,13 +8,13 @@ return {
       modes = {
         char = {
           enabled = false,
-          jump_labels = true
-        }
+          jump_labels = true,
+        },
       },
       label = {
         uppercase = false,
       },
-      labels = "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG"
+      labels = "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
     },
     -- stylua: ignore
     keys = {
@@ -54,6 +54,5 @@ return {
         desc = "Flash jump line"
       },
     },
-
-  }
+  },
 }
