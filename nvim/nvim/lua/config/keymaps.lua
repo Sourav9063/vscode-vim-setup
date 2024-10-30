@@ -15,3 +15,19 @@ vim.keymap.set('i', 'ii', '<Esc>')
 -- H L to
 vim.keymap.set({ 'n', 'v', 'o' }, 'H', '^')
 vim.keymap.set({ 'n', 'v', 'o' }, 'L', '$')
+
+-- J K to move
+if vim.g.vscode then
+  -- VSCode extension
+else
+  vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+  vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+  -- ordinary Neovim
+end
+
+-- whole document
+vim.keymap.set({ 'n' }, 'ie', 'ggVG')
+vim.keymap.set({ 'n' }, 'vie', 'ggVG')
+vim.keymap.set({ 'n' }, 'yie', 'ggVGy')
+vim.keymap.set({ 'n' }, 'die', 'ggVGd')
+vim.keymap.set({ 'n' }, 'cie', 'ggVGc')

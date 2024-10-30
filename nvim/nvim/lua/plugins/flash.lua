@@ -14,7 +14,7 @@ return {
       label = {
         uppercase = false,
       },
-      labels = "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUIASDFOPNMQWERTZXCVBG"
+      labels = "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG"
     },
     -- stylua: ignore
     keys = {
