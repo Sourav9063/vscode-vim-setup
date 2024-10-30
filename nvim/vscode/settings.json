@@ -1,0 +1,488 @@
+{
+  "editor.tokenColorCustomizations": {
+    "[Abyss]": {
+      "textMateRules": [
+        {
+          "name": "Function argument",
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#6688CC"
+          }
+        },
+        {
+          "name": "Class name",
+          "scope": [
+            "entity.name.class",
+            "entity.name.type",
+            "entity.name.namespace",
+            "entity.name.scope-resolution"
+          ],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#9966b8"
+          }
+        }
+      ]
+    }
+  },
+
+  "keyboard.dispatch": "keyCode",
+  "git.ignoreMissingGitWarning": true,
+  "editor.wordWrapColumn": 40,
+  "files.autoSaveDelay": 100,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "editor.renderControlCharacters": false,
+  "workbench.colorCustomizations": {
+    "editor.background": "#000000",
+    "terminal.background": "#000",
+    "editorBracketHighlight.foreground1": "#750de6",
+    "editorBracketHighlight.foreground2": "#376cff",
+    "editorBracketHighlight.foreground3": "#31e9e3",
+    "editorBracketHighlight.foreground4": "#0e9a0e",
+    "editorBracketHighlight.foreground5": "#f1f51c",
+    "editorBracketHighlight.foreground6": "#fa9231",
+    "editorBracketMatch.background": "#7c00e2a6",
+    "editorBracketMatch.border": "#c300ff",
+    "editorCursor.foreground": "#ff0000",
+    "[Abyss]": {
+      "editor.selectionBackground": "#0d335a",
+      "statusBar.background": "#170038",
+      "statusBar.foreground": "#b6b5b5",
+      "statusBar.border": "#232C34",
+      "activityBar.activeBackground": "#280858",
+      "tab.activeBackground": "#280858",
+      "tab.activeBorder": "#9900ff",
+      "sideBar.border": "#232C34",
+      "tab.hoverBorder": "#420099",
+      "editorLineNumber.foreground": "#3e505a",
+      "sideBarSectionHeader.background": "#051729",
+      "scrollbarSlider.background": "#160a2e"
+    }
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "git.suggestSmartCommit": false,
+  "python.languageServer": "Pylance",
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": "on"
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "C_Cpp.intelliSenseUpdateDelay": 500,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.suggest.preview": true,
+  "cSpell.userWords": [
+    "bangla",
+    "blogid",
+    "esversion",
+    "livetv",
+    "nextauth",
+    "scrollbars",
+    "signin",
+    "Sourav",
+    "sust",
+    "Sylhet",
+    "tmpdown",
+    "tmpup",
+    "userid",
+    "webfonts"
+  ],
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "terminal.integrated.gpuAcceleration": "off",
+  "editor.guides.bracketPairs": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "javascriptreact"
+  ],
+  "git.confirmSync": false,
+  "window.commandCenter": true,
+  "explorer.confirmDragAndDrop": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.enabled": true,
+  "javascript.suggest.includeCompletionsForImportStatements": true,
+  "javascript.suggest.classMemberSnippets.enabled": true,
+  "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
+  "javascript.suggest.jsdoc.generateReturns": true,
+  "javascript.suggestionActions.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeJSDocs": true,
+  "javascript.suggest.names": true,
+  "javascript.suggest.paths": true,
+  "editor.stickyScroll.enabled": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "window.titleBarStyle": "custom",
+  "git.mergeEditor": true,
+  "code-runner.runInTerminal": true,
+  "workbench.sideBar.location": "right",
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "path-intellisense.autoTriggerNextSuggestion": true,
+  "console-ninja.featureSet": "Community",
+  "terminal.integrated.env.linux": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.ignoreRebaseWarning": true,
+  "workbench.startupEditor": "none",
+  "yaml.schemas": {
+    "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.jira.jqlList": [
+    {
+      "id": "eb59aab1-39fb-43ea-b77d-43e1a655d847",
+      "enabled": true,
+      "name": "My shellbee Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
+      "monitor": true
+    }
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "codeium.enableCodeLens": false,
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "phase",
+  "atlascode.jira.lastCreateSiteAndProject": {
+    "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
+    "projectKey": "KOR"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "css.lint.validProperties": ["composes"],
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "zenMode.showTabs": "single",
+  "workbench.editor.limit.enabled": true,
+  "explorer.openEditors.visible": 20,
+  "window.customTitleBarVisibility": "auto",
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "search.quickOpen.includeSymbols": true,
+  "editor.minimap.maxColumn": 20,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.side": "left",
+  "editor.minimap.size": "fit",
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on"
+  },
+  "terminal.integrated.env.windows": {},
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["i", "i"],
+  //     "after": ["<Esc>"]
+  //   },
+  //   {
+  //     "before": ["j", "j"],
+  //     "after": ["left", "<C-o>"]
+  //   },
+  //   {
+  //     "before": ["i", "Enter"],
+  //     "after": ["<Esc>", "o"]
+  //   },
+  //   {
+  //     "before": ["I", "Enter"],
+  //     "after": ["<Esc>", "O"]
+  //   }
+  // ],
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["i", "i"],
+  //     "after": ["<Esc>"]
+  //   },
+  //   {
+  //     "before": ["g", "q"],
+  //     "commands": ["editor.action.quickFix"]
+  //   },
+  //   {
+  //     "before": ["L"],
+  //     "after": ["$"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["^"]
+  //   },
+  //   {
+  //     "before": ["K"],
+  //     "commands": ["editor.action.moveLinesUpAction"]
+  //   },
+  //   {
+  //     "before": ["J"],
+  //     "commands": ["editor.action.moveLinesDownAction"]
+  //   },
+  //   {
+  //     "before": ["a", "f"],
+  //     "commands": ["editor.action.smartSelect.expand"]
+  //   },
+  //   {
+  //     "before": ["a", "b"],
+  //     "commands": ["editor.action.smartSelect.shrink"]
+  //   },
+  //   {
+  //     "before": ["a", "o"],
+  //     "commands": ["editor.emmet.action.balanceOut"]
+  //   },
+  //   {
+  //     "before": ["a", "i"],
+  //     "commands": ["editor.emmet.action.balanceIn"]
+  //   },
+  //   {
+  //     "before": ["p"],
+  //     "after": ["P"]
+  //   },
+  //   {
+  //     "before": ["f"],
+  //     "after": ["<leader>", "<leader>", "s"]
+  //   },
+  //   {
+  //     "before": ["F"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "j"]
+  //   },
+  //   {
+  //     "before": ["z"],
+  //     "after": ["<leader>", "<leader>"]
+  //   },
+  //   {
+  //     "before": ["Z"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+  //   },
+
+  //   {
+  //     "before": ["t"],
+  //     "after": ["f"]
+  //   },
+  //   {
+  //     "before": ["T"],
+  //     "after": ["F"]
+  //   },
+  //   {
+  //     "before": ["z", "z"],
+  //     "after": ["z"]
+  //   }
+  // ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["g", "q"],
+  //     "commands": ["editor.action.quickFix"]
+  //   },
+  //   {
+  //     "before": ["g", "r"],
+  //     "commands": ["editor.action.goToReferences"]
+  //   },
+  //   {
+  //     "before": ["g", "f"],
+  //     "commands": ["editor.action.goToImplementation"]
+  //   },
+  //   {
+  //     "before": ["L"],
+  //     "after": ["$"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["^"]
+  //   },
+  //   {
+  //     "before": ["K"],
+  //     "commands": ["editor.action.moveLinesUpAction"]
+  //   },
+  //   {
+  //     "before": ["J"],
+  //     "commands": ["editor.action.moveLinesDownAction"]
+  //   },
+  //   {
+  //     "before": ["g", "p"],
+  //     "commands": ["editor.action.peekDefinition"]
+  //   },
+  //   {
+  //     "before": ["g", "h"],
+  //     "commands": ["editor.action.showDefinitionPreviewHover"]
+  //   },
+  //   {
+  //     "before": ["g", "y"],
+  //     "commands": [":reg"]
+  //   },
+  //   {
+  //     "before": ["g", "j"],
+  //     "commands": [":ju"]
+  //   },
+  //   {
+  //     "before": ["g", "x"],
+  //     "commands": [":marks"]
+  //   },
+  //   {
+  //     "before": ["Enter"],
+  //     "after": ["o", "<Esc>"]
+  //   },
+  //   {
+  //     "before": ["g", "Enter"],
+  //     "after": ["O", "<Esc>"]
+  //   },
+  //   {
+  //     "before": ["z", "n"],
+  //     "commands": ["workbench.action.navigateBack"]
+  //   },
+  //   {
+  //     "before": ["z", "m"],
+  //     "commands": ["workbench.action.navigateForward"]
+  //   },
+  //   {
+  //     "before": ["f"],
+  //     "after": ["<leader>", "<leader>", "s"]
+  //   },
+  //   {
+  //     "before": ["F"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "j"]
+  //   },
+  //   {
+  //     "before": ["z"],
+  //     "after": ["<leader>", "<leader>"]
+  //   },
+  //   {
+  //     "before": ["Z"],
+  //     "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
+  //   },
+  //   {
+  //     "before": ["t"],
+  //     "after": ["f"]
+  //   },
+  //   {
+  //     "before": ["T"],
+  //     "after": ["F"]
+  //   },
+  //   {
+  //     "before": ["z", "z"],
+  //     "after": ["z"]
+  //   }
+  // ],
+  // "vim.operatorPendingModeKeyBindings": [
+  //   {
+  //     "before": ["L"],
+  //     "after": ["$"]
+  //   },
+  //   {
+  //     "before": ["H"],
+  //     "after": ["^"]
+  //   }
+  // ],
+  // "vim.handleKeys": {
+  //   "<C-f>": false,
+  //   "<C-s>": false,
+  //   "<C-z>": false,
+  //   "<C-a>": false,
+  //   "<C-x>": false,
+  //   "<C-c>": false,
+  //   "<C-l>": false,
+  //   "<C-i>": false,
+  //   "<C-p>": false,
+  //   "<C-k>": false
+  // },
+  // "vim.useSystemClipboard": true,
+  // "vim.timeout": 350,
+  // "vim.highlightedyank.enable": true,
+
+  // "vim.smartRelativeLine": true,
+  // "vim.leader": "<Space>",
+  // "vim.camelCaseMotion.enable": true,
+  // "vim.easymotion": true,
+  // "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
+  // "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  // "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+
+  "vscode-neovim.compositeKeys": {
+    "ii": {
+      "command": "vscode-neovim.escape"
+    }
+  },
+  "editor.minimap.renderCharacters": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": -2,
+    "asvetliakov.vscode-neovim": -2
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "single",
+  "workbench.activityBar.location": "top",
+  "editor.cursorSurroundingLines": 4,
+  "editor.wordSeparators": "-_`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "diffEditor.renderSideBySide": true,
+  "go.toolsManagement.autoUpdate": true,
+  "codeium.enableCommandSideHintEducation": false,
+  "codeium.enableExplainProblem": false,
+  "terminal.integrated.suggest.enabled": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 5,
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.stickyScroll.enabled": true,
+  "editor.experimentalInlineEdit.enabled": true,
+  "svg.preview.mode": "svg",
+  "files.autoSave": "onFocusChange",
+  "atlascode.jira.todoIssues.enabled": false,
+  "editor.smoothScrolling": true,
+  "continue.enableTabAutocomplete": false,
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "continue.showInlineTip": false,
+  "editor.minimap.enabled": false,
+  "window.newWindowProfile": "Default",
+  "editor.lineNumbers": "relative"
+}
+// [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
