@@ -10,7 +10,7 @@ vim.keymap.set('v', 'p', 'P')
 vim.keymap.set('n', 'U', '<C-r>')
 
 -- ii to escape
-vim.keymap.set({ 'n', 'v', 'o', 'i' }, 'ii', '<Esc>')
+vim.keymap.set({ 'v', 'o', 'i' }, 'ii', '<Esc>')
 
 -- H L to
 vim.keymap.set({ 'n', 'v', 'o' }, 'L', '$')
@@ -31,3 +31,4 @@ vim.keymap.set('n', 'vie', 'ggVG')
 vim.keymap.set('n', 'yie', 'ggVGy')
 vim.keymap.set('n', 'die', 'ggVGd')
 vim.keymap.set('n', 'cie', 'ggVGc')
+
