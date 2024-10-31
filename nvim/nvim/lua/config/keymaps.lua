@@ -24,9 +24,3 @@ else
   vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
   -- ordinary Neovim
 end
-
--- whole document
-vim.keymap.set('n', 'vie', 'ggVG')
-vim.keymap.set('n', 'yie', 'ggVGy')
-vim.keymap.set('n', 'die', 'ggVGd')
-vim.keymap.set('n', 'cie', 'ggVGc')
