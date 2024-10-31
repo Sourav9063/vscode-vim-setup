@@ -26,9 +26,7 @@ else
 end
 
 -- whole document
-vim.keymap.set('n', 'ie', 'ggVG')
 vim.keymap.set('n', 'vie', 'ggVG')
 vim.keymap.set('n', 'yie', 'ggVGy')
 vim.keymap.set('n', 'die', 'ggVGd')
 vim.keymap.set('n', 'cie', 'ggVGc')
-
