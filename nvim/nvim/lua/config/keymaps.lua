@@ -10,11 +10,11 @@ vim.keymap.set('v', 'p', 'P')
 vim.keymap.set('n', 'U', '<C-r>')
 
 -- ii to escape
-vim.keymap.set('i', 'ii', '<Esc>')
+vim.keymap.set({ 'n', 'v', 'o', 'i' }, 'ii', '<Esc>')
 
 -- H L to
-vim.keymap.set({ 'n', 'v', 'o' }, 'H', '^')
 vim.keymap.set({ 'n', 'v', 'o' }, 'L', '$')
+vim.keymap.set({ 'n', 'v', 'o' }, 'H', '^')
 
 -- J K to move
 if vim.g.vscode then
@@ -26,8 +26,8 @@ else
 end
 
 -- whole document
-vim.keymap.set({ 'n' }, 'ie', 'ggVG')
-vim.keymap.set({ 'n' }, 'vie', 'ggVG')
-vim.keymap.set({ 'n' }, 'yie', 'ggVGy')
-vim.keymap.set({ 'n' }, 'die', 'ggVGd')
-vim.keymap.set({ 'n' }, 'cie', 'ggVGc')
+vim.keymap.set('n', 'ie', 'ggVG')
+vim.keymap.set('n', 'vie', 'ggVG')
+vim.keymap.set('n', 'yie', 'ggVGy')
+vim.keymap.set('n', 'die', 'ggVGd')
+vim.keymap.set('n', 'cie', 'ggVGc')

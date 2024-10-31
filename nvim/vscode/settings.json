@@ -170,7 +170,7 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///c%3A/Users/USER/.vscode-insiders/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
