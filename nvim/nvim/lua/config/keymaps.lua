@@ -22,5 +22,5 @@ if vim.g.vscode then
 else
   vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
   vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-  -- ordinary Neovim
 end
+vim.keymap.set("n", "<Esc>", ":nohlsearch<cr>")
