@@ -480,9 +480,9 @@
     "*": true
   },
   "continue.showInlineTip": false,
-  "editor.minimap.enabled": false,
   "window.newWindowProfile": "Default",
   "editor.lineNumbers": "relative",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font"
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
