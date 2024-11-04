@@ -116,7 +116,6 @@
   ],
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.intelliSenseEngineFallback": "Enabled",
-  "terminal.integrated.gpuAcceleration": "off",
   "editor.guides.bracketPairs": true,
   "workbench.iconTheme": "material-icon-theme",
   "auto-rename-tag.activationOnLanguage": [
@@ -170,7 +169,7 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///c%3A/Users/USER/.vscode-insiders/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -463,7 +462,6 @@
   "go.toolsManagement.autoUpdate": true,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
-  "terminal.integrated.suggest.enabled": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
