@@ -1591,5 +1591,10 @@
     "key": "escape",
     "command": "vscode-neovim.escape",
     "when": "editorTextFocus && neovim.init && neovim.mode != 'normal' && !inlineSuggestionVisible && !suggestWidgetVisible  && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
   }
 ]
