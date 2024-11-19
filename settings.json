@@ -97,7 +97,6 @@
   },
   "workbench.colorTheme": "GitHub Dark Default",
   "editor.bracketPairColorization.enabled": true,
-  "editor.suggest.preview": true,
   "cSpell.userWords": [
     "bangla",
     "blogid",
@@ -116,7 +115,6 @@
   ],
   "C_Cpp.autocompleteAddParentheses": true,
   "C_Cpp.intelliSenseEngineFallback": "Enabled",
-  "terminal.integrated.gpuAcceleration": "off",
   "editor.guides.bracketPairs": true,
   "workbench.iconTheme": "material-icon-theme",
   "auto-rename-tag.activationOnLanguage": [
@@ -440,13 +438,19 @@
   "vim.smartRelativeLine": true,
   "vim.leader": "<Space>",
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "vscodevim.vim": 1,
+    "asvetliakov.vscode-neovim": 1
   },
   "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
   "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  "vscode-neovim.compositeKeys": {
+    "ii": {
+      "command": "vscode-neovim.escape"
+    }
+  },
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
@@ -456,7 +460,6 @@
   "go.toolsManagement.autoUpdate": true,
   "codeium.enableCommandSideHintEducation": false,
   "codeium.enableExplainProblem": false,
-  "terminal.integrated.suggest.enabled": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
@@ -473,7 +476,12 @@
     "*": true
   },
   "continue.showInlineTip": false,
+  "window.newWindowProfile": "Default",
+  "editor.lineNumbers": "relative",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "editor.quickSuggestionsDelay": 1000,
   "editor.minimap.enabled": false,
-  "window.newWindowProfile": "Default"
+  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+  "editor.suggest.preview": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

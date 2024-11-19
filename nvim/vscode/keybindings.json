@@ -1191,11 +1191,11 @@
     "command": "workbench.action.closeAllEditors"
   },
   //suggestion
-  // {
-  //   "key": "space",
-  //   "command": "hideSuggestWidget",
-  //   "when": "suggestWidgetVisible && textInputFocus"
-  // },
+  {
+    "key": "escape",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
   {
     "key": "alt+i f",
     "command": "hideSuggestWidget",
@@ -1216,11 +1216,11 @@
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
-  {
+  /* {
     "key": "escape",
     "command": "editor.action.inlineSuggest.hide",
     "when": "inlineSuggestionVisible && !suggestWidgetVisible"
-  },
+  }, */
   {
     "key": "tab",
     "command": "selectNextSuggestion",
@@ -1265,7 +1265,7 @@
   {
     "key": "alt+i i",
     "command": "editor.action.inlineSuggest.trigger",
-    "when": "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+    "when": "editorTextFocus && !editorHasSelection"
   },
   {
     "key": "alt+i i",
@@ -1559,5 +1559,42 @@
     "key": "alt+t =",
     "command": "workbench.action.terminal.fontZoomIn",
     "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+j",
+    "command": "-supermaven.newConversationTab"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-supermaven.editWithSupermaven"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "-supermaven.undoJump",
+    "when": "supermaven.hasJumped"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-supermaven.addToChat"
+  },
+  {
+    "key": "escape",
+    "command": "-editor.action.inlineSuggest.hide",
+    "when": "  suggestWidgetVisible && inlineEditIsVisible || inlineSuggestionVisible"
+  },
+  {
+    "key": "escape",
+    "command": "vscode-neovim.escape",
+    "when": "editorTextFocus && neovim.init && !dirtyDiffVisible && !findWidgetVisible && !inlineSuggestionVisible && !suggestWidgetVisible && !inReferenceSearchEditor && !markersNavigationVisible && !notebookCellFocused && !notificationCenterVisible && !parameterHintsVisible && !referenceSearchVisible && neovim.mode == 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "escape",
+    "command": "vscode-neovim.escape",
+    "when": "editorTextFocus && neovim.init && neovim.mode != 'normal' && !inlineSuggestionVisible && !suggestWidgetVisible  && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
   }
 ]

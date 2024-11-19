@@ -97,7 +97,6 @@
   },
   "workbench.colorTheme": "GitHub Dark Default",
   "editor.bracketPairColorization.enabled": true,
-  "editor.suggest.preview": true,
   "cSpell.userWords": [
     "bangla",
     "blogid",
@@ -169,7 +168,7 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///c%3A/Users/USER/.vscode-insiders/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -473,7 +472,7 @@
   "files.autoSave": "onFocusChange",
   "atlascode.jira.todoIssues.enabled": false,
   "editor.smoothScrolling": true,
-  "continue.enableTabAutocomplete": false,
+  "continue.enableTabAutocomplete": true,
   "codeium.enableConfig": {
     "*": true
   },
@@ -481,6 +480,9 @@
   "window.newWindowProfile": "Default",
   "editor.lineNumbers": "relative",
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "editor.minimap.enabled": false
+  "editor.quickSuggestionsDelay": 1000,
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+  "editor.suggest.preview": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
