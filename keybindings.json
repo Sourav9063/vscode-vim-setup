@@ -259,7 +259,7 @@
     "when": "workbench.scm.active"
   },
   {
-    "key": "alt+s c",
+    "key": "alt+s alt+c",
     "command": "git.checkout",
     "when": "!operationInProgress"
   },
@@ -359,6 +359,12 @@
     "command": "editor.action.dirtydiff.previous",
     "when": "editorTextFocus && !textCompareEditorActive"
   },
+  {
+    "key": "alt+s c",
+    "command": "workbench.action.quickOpen",
+    "args": ">git "
+  },
+
   //references
   {
     "key": "alt+n d",
@@ -1591,5 +1597,10 @@
     "key": "escape",
     "command": "vscode-neovim.escape",
     "when": "editorTextFocus && neovim.init && neovim.mode != 'normal' && !inlineSuggestionVisible && !suggestWidgetVisible  && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
   }
 ]
