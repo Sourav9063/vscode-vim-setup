@@ -24,3 +24,7 @@ sudo swapon /swapfile
 ```bash
 sudo swapon --show
 ```
+# install clipboard to sync neovim
+```bash
+sudo apt install wl-clipboard
+```
