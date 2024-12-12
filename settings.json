@@ -483,6 +483,7 @@
   "editor.minimap.enabled": false,
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
   "editor.suggest.preview": true,
+  "editor.pasteAs.preferences": ["text.updateImports"],
   "git.blame.statusBarItem.enabled": true,
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})"
 }
