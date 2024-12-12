@@ -4,17 +4,17 @@
 --
 
 -- paste without overwriting
-vim.keymap.set('v', 'p', 'P')
+vim.keymap.set("v", "p", "P")
 
 -- redo
-vim.keymap.set('n', 'U', '<C-r>')
+vim.keymap.set("n", "U", "<C-r>")
 
 -- ii to escape
-vim.keymap.set({ 'v', 'o', 'i' }, 'ii', '<Esc>')
+vim.keymap.set({ "v", "o", "i" }, "ii", "<Esc>")
 
 -- H L to
-vim.keymap.set({ 'n', 'v', 'o' }, 'L', '$')
-vim.keymap.set({ 'n', 'v', 'o' }, 'H', '^')
+vim.keymap.set({ "n", "v", "o" }, "L", "$")
+vim.keymap.set({ "n", "v", "o" }, "H", "^")
 
 -- J K to move
 if vim.g.vscode then
