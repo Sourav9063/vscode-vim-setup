@@ -28,3 +28,7 @@ sudo swapon --show
 ```bash
 sudo apt install wl-clipboard
 ```
+# No c compiler
+```bash
+sudo apt-get install build-essential
+```
