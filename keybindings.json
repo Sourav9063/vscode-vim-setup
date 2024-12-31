@@ -1527,16 +1527,16 @@
     "command": "workbench.action.terminal.resizePaneRight",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
-  {
-    "key": "alt+n n",
-    "command": "explorer.newFile",
-    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
-  },
-  {
-    "key": "alt+n shift+n",
-    "command": "explorer.newFolder",
-    "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
-  },
+  // {
+  //   "key": "alt+n n",
+  //   "command": "explorer.newFile",
+  //   "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  // },
+  // {
+  //   "key": "alt+n shift+n",
+  //   "command": "explorer.newFolder",
+  //   "when": "filesExplorerFocus && !editorTextFocus&&!textInputFocus"
+  // },
   {
     "key": "alt+t c",
     "command": "workbench.action.terminal.clear",
@@ -1602,5 +1602,84 @@
     "key": "ctrl+h",
     "command": "-editor.action.startFindReplaceAction",
     "when": "editorFocus || editorIsOpen"
+  },
+  //copilot
+  {
+    "key": "alt+i i",
+    "command": "editor.action.inlineSuggest.trigger",
+    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+e e",
+    "command": "workbench.action.chat.openEditSession",
+    "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+  },
+  {
+    "key": "alt+e a",
+    "command": "github.copilot.acceptCursorPanelSolution",
+    "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+  },
+  {
+    "key": "alt+e j",
+    "command": "github.copilot.nextPanelSolution",
+    "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+  },
+  {
+    "key": "alt+e k",
+    "command": "github.copilot.previousPanelSolution",
+    "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+  },
+  {
+    "key": "alt+e alt+c",
+    "command": "workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
+  },
+  {
+    "key": "alt+e alt+e",
+    "command": "workbench.panel.chatEditing",
+    "when": "workbench.panel.chat.view.edits.active"
+  },
+  {
+    "key": "alt+m alt+e",
+    "command": "workbench.panel.chatEditing",
+    "when": "workbench.panel.chat.view.edits.active"
+  },
+  {
+    "key": "alt+m alt+c",
+    "command": "workbench.panel.chat",
+    "when": "workbench.panel.chat.view.copilot.active"
+  },
+  {
+    "key": "alt+e alt+v",
+    "command": "github.copilot.chat.attachSelection"
+  },
+  {
+    "key": "alt+e v",
+    "command": "github.copilot.edits.attachSelection"
+  },
+  {
+    "key": "alt+e o",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "alt+e i",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+  },
+  {
+    "key": "alt+e i",
+    "command": "workbench.action.terminal.chat.start",
+    "when": "terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "key": "alt+e i",
+    "command": "workbench.action.terminal.chat.close",
+    "when": "terminalChatFocus && terminalChatVisible || terminalChatVisible && terminalFocus"
+  },
+  {
+    "key": "alt+e i",
+    "command": "inlineChat.close",
+    "when": "inlineChatHasProvider && inlineChatVisible"
   }
 ]
