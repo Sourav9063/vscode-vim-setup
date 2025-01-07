@@ -1681,5 +1681,10 @@
     "key": "alt+e i",
     "command": "inlineChat.close",
     "when": "inlineChatHasProvider && inlineChatVisible"
+  },
+  {
+    "key": "alt+v shift+\\",
+    "command": "vue.action.splitEditors",
+    "when": "config.vue.splitEditors.icon && resourceLangId == 'vue'"
   }
 ]

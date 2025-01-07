@@ -163,7 +163,7 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
@@ -210,7 +210,6 @@
   "workbench.editor.limit.enabled": true,
   "explorer.openEditors.visible": 20,
   "window.customTitleBarVisibility": "auto",
-  "workbench.editor.splitInGroupLayout": "vertical",
   "editor.inlineSuggest.suppressSuggestions": true,
   "search.quickOpen.includeSymbols": true,
   "editor.minimap.maxColumn": 20,
@@ -490,7 +489,21 @@
   "editor.pasteAs.preferences": ["text.updateImports"],
   "git.blame.statusBarItem.enabled": true,
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
+  "editor.minimap.enabled": false,
   "editor.linkedEditing": true,
-  "editor.minimap.enabled": false
+  "vue.autoInsert.dotValue": true,
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.missingProps": true,
+  "vue.inlayHints.vBindShorthand": true,
+  "vue.inlayHints.destructuredProps": true,
+  "vue.splitEditors.icon": true,
+  "vue.server.hybridMode": false,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"]
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
