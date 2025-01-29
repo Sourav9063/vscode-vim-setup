@@ -163,12 +163,12 @@
   "console-ninja.featureSet": "Community",
   "terminal.integrated.env.linux": {},
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.2.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -489,7 +489,6 @@
   "editor.pasteAs.preferences": ["text.updateImports"],
   "git.blame.statusBarItem.enabled": true,
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
-  "editor.minimap.enabled": false,
   "editor.linkedEditing": true,
   "vue.autoInsert.dotValue": true,
   "vue.inlayHints.inlineHandlerLeading": true,
@@ -499,11 +498,32 @@
   "vue.splitEditors.icon": true,
   "vue.server.hybridMode": false,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": ["javascript"]
+  "eslint.validate": ["javascript"],
+  "prettier.trailingComma": "all",
+  "tailwind-fold.autoFold": false,
+  "tailwindCSS.emmetCompletions": true,
+  "colorize.include": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "**/*.styl"
+  ],
+  "colorize.languages": ["javascriptreact", "javascript", "css", "scss", "vue"],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "pt"
+  ],
+  "editor.minimap.enabled": false,
+  "markdown-pdf.highlightStyle": "github.css",
+  "markdown-pdf.margin.top": "1cm"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
