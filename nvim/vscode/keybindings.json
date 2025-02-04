@@ -1289,12 +1289,12 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "alt+i l",
+    "key": "alt+i alt+l",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "alt+i alt+l",
+    "key": "alt+i l",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },

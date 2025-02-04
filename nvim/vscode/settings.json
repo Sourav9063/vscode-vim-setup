@@ -168,7 +168,7 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.2.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -199,7 +199,6 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.insertEnclosingFunction": false,
   "css.lint.validProperties": ["composes"],
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
@@ -461,7 +460,6 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
-  "turboConsoleLog.delimiterInsideMessage": "",
   "editor.accessibilitySupport": "off",
   "terminal.integrated.stickyScroll.enabled": true,
   "editor.experimentalInlineEdit.enabled": true,
@@ -477,7 +475,7 @@
   "codeium.enableExplainProblem": false,
   "continue.showInlineTip": false,
   "supermaven.enable": {
-    "*": false
+    "*": true
   },
   "github.copilot.editor.enableAutoCompletions": false,
   "github.copilot.renameSuggestions.triggerAutomatically": false,
@@ -520,10 +518,17 @@
     "className",
     "ngClass",
     "class:list",
-    "pt"
+    "pt",
+    "*pt*"
   ],
-  "editor.minimap.enabled": false,
   "markdown-pdf.highlightStyle": "github.css",
-  "markdown-pdf.margin.top": "1cm"
+  "markdown-pdf.margin.top": "1cm",
+  "editor.minimap.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
