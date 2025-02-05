@@ -1294,7 +1294,17 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
+    "key": "alt+enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
     "key": "alt+i l",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "key": "alt+shift+enter",
     "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },

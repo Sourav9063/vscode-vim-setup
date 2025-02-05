@@ -103,6 +103,7 @@
     "esversion",
     "livetv",
     "nextauth",
+    "Nuxt",
     "scrollbars",
     "signin",
     "Sourav",
@@ -168,7 +169,7 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -523,12 +524,12 @@
   ],
   "markdown-pdf.highlightStyle": "github.css",
   "markdown-pdf.margin.top": "1cm",
-  "editor.minimap.enabled": false,
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
