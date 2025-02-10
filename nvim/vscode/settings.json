@@ -169,7 +169,7 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.jqlList": [
     {
@@ -460,7 +460,7 @@
   "go.toolsManagement.autoUpdate": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
+  "workbench.editor.limit.value": 15,
   "editor.accessibilitySupport": "off",
   "terminal.integrated.stickyScroll.enabled": true,
   "editor.experimentalInlineEdit.enabled": true,
