@@ -1257,11 +1257,6 @@
     "command": "acceptSelectedSuggestion",
     "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
-  {
-    "key": "alt+tab",
-    "command": "acceptSelectedSuggestion",
-    "when": "!inlineSuggestionVisible &&acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
-  },
   //inline
   {
     "key": "alt+i alt+i",
@@ -1300,6 +1295,11 @@
   },
   {
     "key": "alt+enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "key": "alt+tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
