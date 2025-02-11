@@ -90,7 +90,6 @@
     "**/.factorypath": true
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
-  "C_Cpp.intelliSenseUpdateDelay": 500,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -115,16 +114,8 @@
     "webfonts"
   ],
   "C_Cpp.autocompleteAddParentheses": true,
-  "C_Cpp.intelliSenseEngineFallback": "Enabled",
   "editor.guides.bracketPairs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "auto-rename-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "php",
-    "javascript",
-    "javascriptreact"
-  ],
   "git.confirmSync": false,
   "window.commandCenter": true,
   "explorer.confirmDragAndDrop": false,
@@ -171,16 +162,6 @@
   "yaml.schemas": {
     "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
-  "atlascode.jira.jqlList": [
-    {
-      "id": "eb59aab1-39fb-43ea-b77d-43e1a655d847",
-      "enabled": true,
-      "name": "My shellbee Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
-      "monitor": true
-    }
-  ],
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -194,10 +175,6 @@
   "codeium.enableCodeLens": false,
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "phase",
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
-    "projectKey": "KOR"
-  },
   "diffEditor.ignoreTrimWhitespace": false,
   "turboConsoleLog.insertEnclosingClass": false,
   "css.lint.validProperties": ["composes"],
@@ -465,7 +442,6 @@
   "editor.experimentalInlineEdit.enabled": true,
   "svg.preview.mode": "svg",
   "files.autoSave": "onFocusChange",
-  "atlascode.jira.todoIssues.enabled": false,
   "editor.smoothScrolling": true,
   "continue.enableTabAutocomplete": true,
   "codeium.enableConfig": {
@@ -513,22 +489,19 @@
     "**/*.styl"
   ],
   "colorize.languages": ["javascriptreact", "javascript", "css", "scss", "vue"],
-  "tailwindCSS.classAttributes": [
-    "class",
-    "className",
-    "ngClass",
-    "class:list",
-    "pt",
-    "*pt*"
-  ],
-  "markdown-pdf.highlightStyle": "github.css",
-  "markdown-pdf.margin.top": "1cm",
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "pt"
+  ]
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
