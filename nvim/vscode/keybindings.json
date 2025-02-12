@@ -892,10 +892,6 @@
     "args": "? "
   },
   {
-    "key": "alt+o e",
-    "command": "workbench.action.focusFirstEditorGroup"
-  },
-  {
     "key": "alt+o c",
     "command": "workbench.action.showCommands"
   },
@@ -1696,6 +1692,21 @@
     "key": "alt+e i",
     "command": "inlineChat.close",
     "when": "inlineChatHasProvider && inlineChatVisible"
+  },
+  {
+    "key": "alt+m shift+c",
+    "command": "workbench.action.chat.openInEditor",
+    "when": "chatIsEnabled"
+  },
+  {
+    "key": "alt+e c",
+    "command": "workbench.action.quickOpen",
+    "args": ">chat "
+  },
+  {
+    "key": "alt+o e",
+    "command": "workbench.action.quickOpen",
+    "args": ">chat "
   },
   {
     "key": "alt+v shift+\\",
