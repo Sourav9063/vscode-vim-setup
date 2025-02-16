@@ -81,7 +81,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.ipynb": "jupyter-notebook",
+    "*.svg": "default"
   },
   "files.exclude": {
     "**/.classpath": true,
@@ -427,7 +429,6 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
   "editor.cursorSurroundingLines": 4,
@@ -451,9 +452,8 @@
   "codeium.enableExplainProblem": false,
   "continue.showInlineTip": false,
   "supermaven.enable": {
-    "*": true
+    "*": false
   },
-  "github.copilot.editor.enableAutoCompletions": false,
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "editor.lineNumbers": "relative",
   "terminal.integrated.fontFamily": "FiraMono Nerd Font",
@@ -464,13 +464,6 @@
   "git.blame.statusBarItem.enabled": true,
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
   "editor.linkedEditing": true,
-  "vue.autoInsert.dotValue": true,
-  "vue.inlayHints.inlineHandlerLeading": true,
-  "vue.inlayHints.missingProps": true,
-  "vue.inlayHints.vBindShorthand": true,
-  "vue.inlayHints.destructuredProps": true,
-  "vue.splitEditors.icon": true,
-  "vue.server.hybridMode": false,
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -489,19 +482,15 @@
     "**/*.styl"
   ],
   "colorize.languages": ["javascriptreact", "javascript", "css", "scss", "vue"],
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "editor.minimap.enabled": false,
   "tailwindCSS.classAttributes": [
     "class",
     "className",
     "ngClass",
     "class:list",
     "pt"
-  ]
+  ],
+  "vue.splitEditors.icon": true,
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
