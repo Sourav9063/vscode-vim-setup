@@ -442,7 +442,6 @@
   "terminal.integrated.stickyScroll.enabled": true,
   "editor.experimentalInlineEdit.enabled": true,
   "svg.preview.mode": "svg",
-  "files.autoSave": "onFocusChange",
   "editor.smoothScrolling": true,
   "continue.enableTabAutocomplete": true,
   "codeium.enableConfig": {
@@ -452,7 +451,7 @@
   "codeium.enableExplainProblem": false,
   "continue.showInlineTip": false,
   "supermaven.enable": {
-    "*": false
+    "*": true
   },
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "editor.lineNumbers": "relative",
@@ -490,7 +489,8 @@
     "pt"
   ],
   "vue.splitEditors.icon": true,
-  "editor.minimap.enabled": false,
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

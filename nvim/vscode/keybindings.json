@@ -1736,5 +1736,10 @@
   {
     "key": "alt+o shift+r",
     "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
   }
 ]
