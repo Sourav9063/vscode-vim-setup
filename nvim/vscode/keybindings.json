@@ -1368,10 +1368,6 @@
     }
   },
   {
-    "key": "alt+m f",
-    "command": "workbench.view.search"
-  },
-  {
     "key": "alt+m s",
     "command": "workbench.view.scm",
     "when": "workbench.scm.active"
@@ -1741,5 +1737,39 @@
     "key": "tab",
     "command": "-editor.emmet.action.expandAbbreviation",
     "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "alt+m f",
+    "command": "workbench.view.search",
+    "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+  },
+  {
+    "key": "alt+f alt+f",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "alt+f alt+n",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f n",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f alt+n",
+    "command": "editor.action.nextSelectionMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f n",
+    "command": "editor.action.previousSelectionMatchFindAction",
+    "when": "editor.hasSelection && editorHasSelection && editorFocus"
+  },
+  {
+    "key": "alt+f f",
+    "command": "workbench.action.findInFiles"
   }
 ]

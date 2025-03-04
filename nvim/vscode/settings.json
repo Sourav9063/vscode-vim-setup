@@ -491,6 +491,10 @@
   "vue.splitEditors.icon": true,
   "workbench.editor.enablePreview": false,
   "files.autoSave": "onFocusChange",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "search.smartCase": true,
+  "search.sortOrder": "fileNames",
+  "workbench.quickOpen.closeOnFocusLost": false,
+  "search.seedOnFocus": true
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

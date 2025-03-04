@@ -24,3 +24,6 @@ else
 end
 
 vim.keymap.set("n", "<Esc>", ":noh<cr>")
+
+-- Visual Selection Search
+vim.keymap.set("v", "/", '"sy/<C-R>s<CR>', { silent = true, noremap = true })
