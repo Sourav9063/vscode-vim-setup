@@ -1771,5 +1771,19 @@
   {
     "key": "alt+f f",
     "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "alt+m shift+o",
+    "command": "workbench.panel.output.focus"
+  },
+  {
+    "key": "alt+q alt+q",
+    "command": "workbench.output.action.clearOutput",
+    "when": "inOutput"
+  },
+  {
+    "key": "alt+o o",
+    "command": "workbench.action.showOutputChannels",
+    "when": "inOutput"
   }
 ]
