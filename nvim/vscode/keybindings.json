@@ -1754,7 +1754,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "alt+f n",
+    "key": "alt+f alt+shift+n",
     "command": "editor.action.previousMatchFindAction",
     "when": "editorFocus"
   },
@@ -1764,9 +1764,19 @@
     "when": "editorFocus"
   },
   {
-    "key": "alt+f n",
+    "key": "alt+f alt+shift+n",
     "command": "editor.action.previousSelectionMatchFindAction",
     "when": "editor.hasSelection && editorHasSelection && editorFocus"
+  },
+  {
+    "key": "alt+f n",
+    "command": "search.action.focusNextSearchResult",
+    "when": "hasSearchResult || inSearchEditor"
+  },
+  {
+    "key": "alt+f shift+n",
+    "command": "search.action.focusPreviousSearchResult",
+    "when": "hasSearchResult || inSearchEditor"
   },
   {
     "key": "alt+f f",
