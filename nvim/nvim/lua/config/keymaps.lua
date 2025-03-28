@@ -15,15 +15,7 @@ vim.keymap.set({ "v", "o", "i" }, "ii", "<Esc>")
 vim.keymap.set({ "n", "v", "o" }, "L", "$")
 vim.keymap.set({ "n", "v", "o" }, "H", "^")
 
--- J K to move
-if vim.g.vscode then
-  -- VSCode extension
-else
-  vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-  vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-end
-
-vim.keymap.set("n", "<Esc>", ":noh<cr>")
+-- vim.keymap.set("n", "<Esc>", ":noh<cr>")
 
 -- Visual Selection Search
 vim.keymap.set("v", "/", '"sy/<C-R>s<CR>', { silent = true, noremap = true })

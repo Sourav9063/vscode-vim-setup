@@ -30,7 +30,6 @@
   "keyboard.dispatch": "keyCode",
   "git.ignoreMissingGitWarning": true,
   "editor.wordWrapColumn": 40,
-  "files.autoSaveDelay": 100,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -435,7 +434,6 @@
   "editor.wordSeparators": "-_`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "diffEditor.renderSideBySide": true,
   "go.toolsManagement.autoUpdate": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 15,
   "editor.accessibilitySupport": "off",
@@ -491,10 +489,19 @@
   "vue.splitEditors.icon": true,
   "workbench.editor.enablePreview": false,
   "files.autoSave": "onFocusChange",
-  "editor.minimap.enabled": false,
   "search.smartCase": true,
   "search.sortOrder": "fileNames",
-  "workbench.quickOpen.closeOnFocusLost": false,
-  "search.seedOnFocus": true
+  "search.seedOnFocus": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  },
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.minimap.enabled": false,
+  "editor.wordBasedSuggestions": "allDocuments"
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
