@@ -283,11 +283,11 @@
       "after": ["^"]
     },
     {
-      "before": ["a", "f"],
+      "before": ["a", "l"],
       "commands": ["editor.action.smartSelect.expand"]
     },
     {
-      "before": ["a", "b"],
+      "before": ["a", "h"],
       "commands": ["editor.action.smartSelect.shrink"]
     },
     {
@@ -535,6 +535,14 @@
   "editor.wordBasedSuggestions": "allDocuments",
   "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "roo-cline.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ]
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]
