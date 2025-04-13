@@ -68,7 +68,6 @@
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "git.suggestSmartCommit": false,
   "python.languageServer": "Pylance",
   "[json]": {
     "editor.quickSuggestions": {
@@ -202,14 +201,17 @@
   "vim.flash.ignorecase": true,
   "vim.flash.marker.backgroundColor": "#ffffff",
   // "vim.flash.marker.nextMatchBackgroundColor": "#009278",
+  //vim
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<Space>",
   "vim.camelCaseMotion.enable": true,
-  "vim.easymotionKeys": "hjkl;yuiasdgopnmqwertzxcvb,'f",
+  "vim.easymotionKeys": "hjkl;yuigop,'nmqwertzxcvbasdf",
   "vim.easymotion": true,
-  // "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
-  // "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  "vim.showMarksInGutter": true,
+  "vim.targets.enable": true,
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
   //move this to default profile
   "vim.insertModeKeyBindings": [
     {
@@ -237,6 +239,10 @@
     {
       "before": ["g", "q"],
       "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
       "before": ["L"],
@@ -291,11 +297,31 @@
       "after": ["z"]
     },
     {
-      "before": ["/"],
+      "before": ["g", "/"],
       "after": ["\"", "s", "y", "/", "<C-R>", "s", "<CR>"]
+    },
+    {
+      "before": ["g", "?"],
+      "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["U"],
+      "commands": ["redo"]
+    },
+    // {
+    //   "before": ["U"],
+    //   "after": ["<C-r>"]
+    // },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
     {
       "before": ["g", "q"],
       "commands": ["editor.action.quickFix"]
@@ -306,7 +332,7 @@
     },
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
       "before": ["g", "f"],
@@ -315,10 +341,6 @@
     {
       "before": ["L"],
       "after": ["$"]
-    },
-    {
-      "before": ["U"],
-      "after": ["<C-r>"]
     },
     {
       "before": ["H"],
@@ -359,6 +381,14 @@
     {
       "before": ["z", "m"],
       "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.openNextRecentlyUsedEdior"]
     },
     {
       "before": ["t"],
@@ -450,10 +480,11 @@
     "arguments": "on",
     "unknown": "off"
   },
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
   "github.copilot.editor.enableAutoCompletions": false,
+  "editor.wordBasedSuggestions": "allDocuments",
   "editor.minimap.enabled": false,
-  "editor.wordBasedSuggestions": "allDocuments"
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "chat.commandCenter.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

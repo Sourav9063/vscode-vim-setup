@@ -1,6 +1,40 @@
 // Place your key bindings in this file to override the defaults
 [
+  {
+    "key": "alt+left",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "alt+right",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
   //cursor
+  {
+    "key": "ctrl+alt+l",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+;",
+    "command": "cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+;",
+    "command": "cursorWordPartLeft"
+  },
+  {
+    "key": "alt+b",
+    "command": "-cursorWordStartLeft",
+    "when": "textInputFocus"
+  },
   {
     "key": "alt+n",
     "command": "-cursorPageDown",
@@ -53,6 +87,10 @@
   {
     "key": "alt+g alt+f",
     "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+alt+h",
+    "command": "extension.git-file-history"
   },
   {
     "key": "ctrl+shift+0",
@@ -113,7 +151,10 @@
     "key": "alt+n shift+r",
     "command": "typescript.removeUnusedImports"
   },
-  //select
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
   {
     "key": "ctrl+alt+l",
     "command": "-turboConsoleLog.displayLogMessage"
@@ -173,6 +214,16 @@
     "command": "cursorLeftSelect",
     "when": "textInputFocus"
   },
+
+  {
+    "key": "ctrl+shift+alt+;",
+    "command": "cursorWordPartLeftSelect"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
   //git
   {
     "key": "alt+s h",
@@ -218,6 +269,16 @@
     "key": "alt+s d",
     "command": "diffEditor.toggleCollapseUnchangedRegions",
     "when": "isInDiffEditor"
+  },
+  {
+    "key": "alt+s k",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+s j",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
   },
   {
     "key": "alt+s s",
@@ -365,6 +426,51 @@
     "command": "closeReferenceSearch",
     "when": "editorTextFocus && referenceSearchVisible && !config.editor.stablePeek || referenceSearchVisible && !config.editor.stablePeek && !inputFocus"
   },
+  //group
+  {
+    "command": "runCommands",
+    "key": "alt+shift+g h",
+    "args": {
+      "commands": [
+        "workbench.action.newGroupLeft",
+        "workbench.action.quickOpen"
+      ]
+    }
+  },
+  {
+    "key": "alt+shift+g l",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.newGroupRight",
+        "workbench.action.quickOpen"
+      ]
+    }
+  },
+  {
+    "key": "alt+shift+g k",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.newGroupAbove",
+        "workbench.action.quickOpen"
+      ]
+    }
+  },
+  {
+    "key": "alt+shift+g j",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.newGroupBelow",
+        "workbench.action.quickOpen"
+      ]
+    }
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
   {
     "key": "alt+.",
     "command": "-auto-close-tag.closeTag"
@@ -375,10 +481,57 @@
     "when": "textInputFocus"
   },
   {
+    "key": "ctrl+alt+b",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+b",
+    "command": "deleteWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+shift+b",
+    "command": "deleteWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
     "key": "ctrl+i",
     "command": "-codeium.openCodeiumCommand",
     "when": "codeium.commandEnabled && editorTextFocus && !inlineSuggestionsVisible"
   },
+  // {
+  //   "key": "tab",
+  //   "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+  //   "when": "inFilesPicker && inQuickOpen"
+  // },
+  // {
+  //   "key": "ctrl+tab",
+  //   "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+  //   "when": "inFilesPicker && inQuickOpen"
+  // },
+
+  {
+    "key": "alt+j",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "command": "editor.action.moveLinesUpAction",
+    "key": "alt+k",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "command": "editor.action.moveLinesDownAction",
+    "key": "alt+j",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+
   //group
   {
     "key": "alt+g k",
@@ -465,46 +618,6 @@
   {
     "key": "alt+g 4",
     "command": "workbench.action.focusFourthEditorGroup"
-  },
-  {
-    "command": "runCommands",
-    "key": "alt+shift+g h",
-    "args": {
-      "commands": [
-        "workbench.action.newGroupLeft",
-        "workbench.action.quickOpen"
-      ]
-    }
-  },
-  {
-    "key": "alt+shift+g l",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.newGroupRight",
-        "workbench.action.quickOpen"
-      ]
-    }
-  },
-  {
-    "key": "alt+shift+g k",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.newGroupAbove",
-        "workbench.action.quickOpen"
-      ]
-    }
-  },
-  {
-    "key": "alt+shift+g j",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.newGroupBelow",
-        "workbench.action.quickOpen"
-      ]
-    }
   },
   //minimap
   {
@@ -719,26 +832,6 @@
     "command": "workbench.action.nextEditor"
   },
   //quick open
-  // {
-  //   "key": "tab",
-  //   "command": "workbench.action.quickOpenNavigateNextInFilePicker",
-  //   "when": "inFilesPicker && inQuickOpen"
-  // },
-  // {
-  //   "key": "ctrl+tab",
-  //   "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
-  //   "when": "inFilesPicker && inQuickOpen"
-  // },
-  {
-    "key": "alt+j",
-    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
-  },
-  {
-    "key": "alt+k",
-    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
-    "when": "inFilesPicker && inQuickOpen"
-  },
   {
     "key": "alt+o o",
     "command": "workbench.action.quickOpen"
@@ -983,6 +1076,20 @@
   },
   // anchor
   {
+    "key": "alt+a a",
+    "command": "editor.action.setSelectionAnchor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+a shift+a",
+    "command": "editor.action.selectFromAnchorToCursor",
+    "when": "editorTextFocus && selectionAnchorSet"
+  },
+  {
+    "key": "alt+a ctrl+a",
+    "command": "editor.action.goToSelectionAnchor"
+  },
+  {
     "key": "ctrl+shift+alt+.",
     "command": "editor.action.autoFix",
     "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
@@ -1017,6 +1124,10 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "ctrl+shift+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
     "key": "alt+a w",
     "command": "editor.emmet.action.wrapWithAbbreviation"
   },
@@ -1032,7 +1143,16 @@
     "key": "alt+a alt+i",
     "command": "editor.emmet.action.balanceIn"
   },
-  //vim
+  {
+    "key": "ctrl+shift+alt+l",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+h",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
   // {
   //   "key": "shift+alt+v",
   //   "command": "toggleVim"
@@ -1066,29 +1186,11 @@
     "command": "toggleVim"
   },
   {
-    "command": "editor.action.moveLinesUpAction",
-    "key": "alt+k",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-  },
-  {
-    "command": "editor.action.moveLinesDownAction",
-    "key": "alt+j",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-  },
-  {
     "key": "g r",
     "command": "closeReferenceSearch",
     "when": "editorTextFocus && referenceSearchVisible && !config.editor.stablePeek || referenceSearchVisible && !config.editor.stablePeek && !inputFocus"
   },
   // quit
-  {
-    "key": "ctrl+q",
-    "command": "-workbench.action.quit"
-  },
-  {
-    "key": "ctrl+shift+w",
-    "command": "-workbench.action.closeWindow"
-  },
   {
     "key": "alt+q alt+q",
     "command": "workbench.action.closeActiveEditor"

@@ -26,11 +26,8 @@
       ]
     }
   },
-
-  "keyboard.dispatch": "keyCode",
   "git.ignoreMissingGitWarning": true,
   "editor.wordWrapColumn": 40,
-  "files.autoSaveDelay": 100,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -71,7 +68,6 @@
   },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "git.suggestSmartCommit": false,
   "python.languageServer": "Pylance",
   "[json]": {
     "editor.quickSuggestions": {
@@ -81,7 +77,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.ipynb": "jupyter-notebook",
+    "*.svg": "default"
   },
   "files.exclude": {
     "**/.classpath": true,
@@ -90,7 +88,6 @@
     "**/.factorypath": true
   },
   "files.defaultLanguage": "${activeEditorLanguage}",
-  "C_Cpp.intelliSenseUpdateDelay": 500,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -103,6 +100,7 @@
     "esversion",
     "livetv",
     "nextauth",
+    "Nuxt",
     "scrollbars",
     "signin",
     "Sourav",
@@ -114,16 +112,8 @@
     "webfonts"
   ],
   "C_Cpp.autocompleteAddParentheses": true,
-  "C_Cpp.intelliSenseEngineFallback": "Enabled",
   "editor.guides.bracketPairs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "auto-rename-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "php",
-    "javascript",
-    "javascriptreact"
-  ],
   "git.confirmSync": false,
   "window.commandCenter": true,
   "explorer.confirmDragAndDrop": false,
@@ -168,18 +158,8 @@
   "git.ignoreRebaseWarning": true,
   "workbench.startupEditor": "none",
   "yaml.schemas": {
-    "file:///home/sbh/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/sourav/.vscode/extensions/atlassian.atlascode-3.4.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
-  "atlascode.jira.jqlList": [
-    {
-      "id": "eb59aab1-39fb-43ea-b77d-43e1a655d847",
-      "enabled": true,
-      "name": "My shellbee Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
-      "monitor": true
-    }
-  ],
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -190,16 +170,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "redhat.telemetry.enabled": false,
-  "codeium.enableCodeLens": false,
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "phase",
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "79bc1d79-0690-4384-aa7b-ff1ff12683f9",
-    "projectKey": "KOR"
-  },
   "diffEditor.ignoreTrimWhitespace": false,
   "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.insertEnclosingFunction": false,
   "css.lint.validProperties": ["composes"],
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
@@ -210,8 +184,6 @@
   "workbench.editor.limit.enabled": true,
   "explorer.openEditors.visible": 20,
   "window.customTitleBarVisibility": "auto",
-  "workbench.editor.splitInGroupLayout": "vertical",
-  "editor.inlineSuggest.suppressSuggestions": true,
   "search.quickOpen.includeSymbols": true,
   "editor.minimap.maxColumn": 20,
   "editor.minimap.showSlider": "always",
@@ -222,6 +194,31 @@
     "strings": "on"
   },
   "terminal.integrated.env.windows": {},
+  //start-cvim
+  "vim.flash.enable": true,
+  // "vim.flash.labels": "hjkl;yuiasdfopnmqwertzxcvb,'gHJKLYUISDFOPNMWERTCVBG",
+  "vim.flash.labels": "hjkl;yuiasdgopnmqwertzxcvb,'f",
+  "vim.flash.ignorecase": true,
+  "vim.flash.marker.backgroundColor": "#ffffff",
+  // "vim.flash.marker.nextMatchBackgroundColor": "#009278",
+  //vim
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<Space>",
+  "vim.camelCaseMotion.enable": true,
+  // "vim.easymotionKeys": "hjkl;yuigop,'nmqwertzxcvbasdf",
+  "vim.easymotionKeys": "hklyuio;[]/.'pnm,qwertzxcvbasdgjf",
+  "vim.easymotion": true,
+  "vim.showMarksInGutter": true,
+  "vim.targets.enable": true,
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
+  "flash-vscode.caseSensitive": false,
+  "flash-vscode.labelBackgroundColor": "#ff0000",
+  "flash-vscode.labelColor": "#ffffff",
+  "flash-vscode.labelFontWeight": "bold",
+  "flash-vscode.dimColor": "rgba(128, 128, 128, 1)",
+  //move this to default profile
   "vim.insertModeKeyBindings": [
     {
       "before": ["i", "i"],
@@ -250,20 +247,40 @@
       "commands": ["editor.action.quickFix"]
     },
     {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "H"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
       "before": ["L"],
       "after": ["$"]
     },
     {
       "before": ["H"],
       "after": ["^"]
-    },
-    {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
-    },
-    {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
     },
     {
       "before": ["a", "f"],
@@ -286,12 +303,12 @@
       "after": ["P"]
     },
     {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
-    },
-    {
       "before": ["F"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["f"],
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["z"],
@@ -301,48 +318,59 @@
       "before": ["Z"],
       "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
     },
-
-    {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
-    },
     {
       "before": ["z", "z"],
       "after": ["z"]
+    },
+    {
+      "before": ["g", "/"],
+      "after": ["\"", "s", "y", "/", "<C-R>", "s", "<CR>"]
+    },
+    {
+      "before": ["g", "?"],
+      "after": ["\"", "s", "y", "?", "<C-R>", "s", "<CR>"]
+    },
+    {
+      "before": ["t"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["g", "q"],
-      "commands": ["editor.action.quickFix"]
+      "before": ["u"],
+      "commands": ["undo"]
     },
     {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "before": ["U"],
+      "commands": ["redo"]
     },
+    // {
+    //   "before": ["U"],
+    //   "after": ["<C-r>"]
+    // },
     {
       "before": ["g", "f"],
       "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": ["L"],
-      "after": ["$"]
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "before": ["H"],
-      "after": ["^"]
+      "before": ["g", "H"],
+      "commands": ["editor.action.goToReferences"]
     },
     {
-      "before": ["K"],
-      "commands": ["editor.action.moveLinesUpAction"]
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
-      "before": ["J"],
-      "commands": ["editor.action.moveLinesDownAction"]
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToImplementation"]
     },
     {
       "before": ["g", "p"],
@@ -351,6 +379,14 @@
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
     },
     {
       "before": ["g", "y"],
@@ -381,12 +417,20 @@
       "commands": ["workbench.action.navigateForward"]
     },
     {
-      "before": ["f"],
-      "after": ["<leader>", "<leader>", "s"]
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditor"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.openNextRecentlyUsedEdior"]
     },
     {
       "before": ["F"],
       "after": ["<leader>", "<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["f"],
+      "after": ["<leader>", "<leader>", "s"]
     },
     {
       "before": ["z"],
@@ -397,16 +441,16 @@
       "after": ["<leader>", "<leader>", "<leader>", "b", "d"]
     },
     {
-      "before": ["t"],
-      "after": ["f"]
-    },
-    {
-      "before": ["T"],
-      "after": ["F"]
-    },
-    {
       "before": ["z", "z"],
       "after": ["z"]
+    },
+    {
+      "before": ["t"],
+      "commands": ["flash-vscode.start"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
@@ -417,75 +461,80 @@
     {
       "before": ["H"],
       "after": ["^"]
+    },
+    {
+      "before": ["f"],
+      "after": ["Escape", "v", "<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["t"],
+      "commands": ["flash-vscode.startSelection"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["flash-vscode.backspace"]
     }
   ],
-  "vim.handleKeys": {
-    "<C-f>": false,
-    "<C-s>": false,
-    "<C-z>": false,
-    "<C-a>": false,
-    "<C-x>": false,
-    "<C-c>": false,
-    "<C-l>": false,
-    "<C-i>": false,
-    "<C-p>": false,
-    "<C-k>": false
-  },
-  "vim.useSystemClipboard": true,
-  "vim.timeout": 350,
-  "vim.highlightedyank.enable": true,
+  //end-cvim
   "editor.minimap.renderCharacters": false,
-  "vim.smartRelativeLine": true,
-  "vim.leader": "<Space>",
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1,
-    "asvetliakov.vscode-neovim": 1
+    "vscodevim.vim": 1
   },
-  "vim.camelCaseMotion.enable": true,
-  "vim.easymotion": true,
-  "vim.easymotionKeys": "hklyuiopnmqwertzxcvb,'g;asdjf",
-  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00ffdd",
-  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#009278",
-  "vscode-neovim.compositeKeys": {
-    "ii": {
-      "command": "vscode-neovim.escape"
-    }
-  },
-  "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "single",
   "workbench.activityBar.location": "top",
   "editor.cursorSurroundingLines": 4,
   "editor.wordSeparators": "-_`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
   "diffEditor.renderSideBySide": true,
   "go.toolsManagement.autoUpdate": true,
-  "codeium.enableCommandSideHintEducation": false,
-  "codeium.enableExplainProblem": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
-  "turboConsoleLog.delimiterInsideMessage": "",
+  "workbench.editor.limit.value": 15,
   "editor.accessibilitySupport": "off",
   "terminal.integrated.stickyScroll.enabled": true,
-  "editor.experimentalInlineEdit.enabled": true,
-  "svg.preview.mode": "svg",
-  "files.autoSave": "onFocusChange",
-  "atlascode.jira.todoIssues.enabled": false,
   "editor.smoothScrolling": true,
-  "continue.enableTabAutocomplete": false,
-  "codeium.enableConfig": {
-    "*": true
-  },
-  "continue.showInlineTip": false,
-  "window.newWindowProfile": "Default",
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
   "editor.lineNumbers": "relative",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "editor.quickSuggestionsDelay": 1000,
-  "editor.minimap.enabled": false,
+  "terminal.integrated.fontFamily": "FiraMono Nerd Font",
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+  "editor.suggest.selectionMode": "never",
   "editor.suggest.preview": true,
   "editor.pasteAs.preferences": ["text.updateImports"],
   "git.blame.statusBarItem.enabled": true,
   "git.blame.statusBarItem.template": "${authorName} (${authorDateAgo})",
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"],
+  "prettier.trailingComma": "all",
+  "tailwind-fold.autoFold": false,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "pt"
+  ],
+  "vue.splitEditors.icon": true,
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "onFocusChange",
+  "search.smartCase": true,
+  "search.sortOrder": "fileNames",
+  "search.seedOnFocus": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  },
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.wordBasedSuggestions": "allDocuments",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "chat.commandCenter.enabled": false,
+  "editor.minimap.enabled": false
 }
 // [[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]

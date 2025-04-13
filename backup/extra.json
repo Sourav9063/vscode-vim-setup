@@ -1,0 +1,77 @@
+
+    //leader
+    // leader e to workbench.view.explorer
+    // leader f to workbench.view.search
+    // leader s to workbench.view.scm
+    // leader t to workbench.action.terminal.focusTabs
+    // leader v to workbench.view.extension.roo-cline-ActivityBar
+    // leader m to workbench.view.extension.codeium
+    // leader r to workbench.view.extension.roo-cline-ActivityBar
+    // leader o to quickopen
+    // leader p to workbench.action.quickOpen
+    // leader c to workbench.action.showCommands
+    // leader S to workbench.action.showAllSymbols
+    // leader h to workbench.action.showAllEditorsByMostRecentlyUsed
+    // leader l to workbench.action.showAllEditorsByMostRecentlyUsed
+    // leader j to workbench.action.openNextEditorFromHistory
+    // leader k to workbench.action.openPreviousEditorFromHistory
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.view.search"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.focusTabs"]
+    },
+    {
+      "before": ["<leader>", "v"],
+      "commands": ["workbench.view.extension.roo-cline-ActivityBar"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["workbench.view.extension.codeium"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["workbench.view.extension.roo-cline-ActivityBar"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "S"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.openNextEditorFromHistory"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.openPreviousEditorFromHistory"]
+    }
